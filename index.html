@@ -28,6 +28,7 @@ body{
   display:flex;
   flex-direction:column;
   justify-content:center;
+  /* background:linear-gradient(180deg,#2b2b2b,#1e1e1e); */
   background:url('poster.jpg') center/cover no-repeat;
   background-position: 40%  30%;
 }
@@ -70,17 +71,7 @@ h1{
   box-shadow:0 10px 25px rgba(0,0,0,0.4);
 }
 
-.hero-right{
-  
-  position:relative;
-}
 
-.hero-right::after{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:linear-gradient(90deg,#1f1f1f 0%,transparent 60%);
-}
 
 /* ===== INFO CARD ===== */
 .section{
@@ -148,9 +139,6 @@ h1{
     font-size:56px;
   }
 
-  .hero-right{
-    height:420px;
-  }
 
   .grid{
     grid-template-columns:1fr;
@@ -162,14 +150,11 @@ h1{
 <body>
 
 <!-- HERO -->
-<section class="hero">
-  <div class="hero-left">
-    <div class="small-title">Cellotrion presenterar</div>
-    <h1>KORANYI<br>SPELAR<br>BACH</h1>
-    <div class="subtitle">En exklusiv konsertupplevelse på Teaterns Hus</div>
-    <a href="#biljetter" class="cta">Boka biljetter</a>
-  </div>
-  <div class="hero-right"></div>
+<section class="hero hero-left">
+  <div class="small-title">Cellotrion presenterar</div>
+  <h1>KORANYI<br>SPELAR<br>BACH</h1>
+  <div class="subtitle">En exklusiv konsertupplevelse på Teaterns Hus</div>
+  <a href="#biljetter" class="cta">Boka biljetter</a>
 </section>
 
 <!-- INFO -->
@@ -201,6 +186,10 @@ h1{
 
     <p style="margin-top:40px;font-size:20px;">
       Fika ingår och serveras <span class="highlight">kl 15</span>.
+    </p>
+
+    <p style="margin-top:40px;font-size:20px;">
+      Förköp via <a href="mailto:biljetter@cellotrion.se" class="highlight">biljetter@cellotrion.se</a>.
     </p>
   </div>
 </section>
