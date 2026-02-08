@@ -30,7 +30,7 @@ body{
   justify-content:center;
   /* background:linear-gradient(180deg,#2b2b2b,#1e1e1e); */
   background:url('poster.jpg') center/cover no-repeat;
-  background-position: 85%  30%;
+  background-position: 85%  30%; 
 }
 
 .small-title{
@@ -125,6 +125,21 @@ h1{
   opacity:0.8;
 }
 
+.footer a.social{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:40px;
+  height:40px;
+  margin-left:12px;
+  color:#e6c27a;
+  text-decoration:none;
+  border-radius:50%;
+  transition:0.18s ease;
+}
+.footer a.social svg{width:20px;height:20px;display:block}
+.footer a.social:hover{background:rgba(230,194,122,0.12);transform:translateY(-2px)}
+
 /* ===== RESPONSIVE ===== */
 @media(max-width:1000px){
   .hero{
@@ -196,6 +211,20 @@ h1{
 
 <div class="footer">
   Välkomna till en stämningsfull Bach‑konsert.
+    <a class="social" href="https://www.instagram.com/cellotrion?igsh=MWYwOXBkbWt3eDI1dg%3D%3D" target="_blank" rel="noopener noreferrer" aria-label="Cellotrion på Instagram">
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <defs>
+          <linearGradient id="igGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#f58529"/>
+            <stop offset="30%" stop-color="#dd2a7b"/>
+            <stop offset="60%" stop-color="#8134af"/>
+            <stop offset="100%" stop-color="#515bd4"/>
+          </linearGradient>
+        </defs>
+        <rect x="0" y="0" width="24" height="24" rx="6" fill="url(#igGrad)" />
+        <path fill="#fff" d="M12 7.2a4.8 4.8 0 1 0 0 9.6 4.8 4.8 0 0 0 0-9.6zm0 7.92a3.12 3.12 0 1 1 0-6.24 3.12 3.12 0 0 1 0 6.24zM17.7 6.06a1.12 1.12 0 1 1-2.24 0 1.12 1.12 0 0 1 2.24 0z"/>
+      </svg>
+    </a>
 </div>
 
 </body>
