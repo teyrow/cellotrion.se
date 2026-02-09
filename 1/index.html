@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Koranyi spelar Bach</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:'Montserrat',sans-serif;
+  background:#1f1f1f;
+  color:#f5f5f5;
+  -webkit-font-smoothing:antialiased;
+}
+
+/* ===== HERO ===== */
+.hero{
+  min-height:100vh;
+  display:grid;
+  grid-template-columns:1.1fr 1fr;
+}
+
+.hero-left{
+  padding:80px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  /* background:linear-gradient(180deg,#2b2b2b,#1e1e1e); */
+  background:url('poster.jpg') center/cover no-repeat;
+  background-position: 85%  30%; 
+}
+
+.small-title{
+  color:#d6b36a;
+  letter-spacing:4px;
+  font-size:14px;
+  margin-bottom:20px;
+}
+
+h1{
+  font-size:86px;
+  line-height:0.9;
+  margin:0 0 30px 0;
+  color:#e6c27a;
+  font-weight:800;
+}
+
+.subtitle{
+  font-size:22px;
+  margin-bottom:30px;
+  color:#ddd;
+}
+
+.cta{
+  display:inline-block;
+  padding:16px 28px;
+  border-radius:40px;
+  background:#e6c27a;
+  color:#111;
+  text-decoration:none;
+  font-weight:600;
+  width:max-content;
+  transition:0.25s ease;
+}
+
+.cta:hover{
+  transform:translateY(-2px);
+  box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+
+
+
+/* ===== INFO CARD ===== */
+.section{
+  padding:80px 20px;
+  display:flex;
+  justify-content:center;
+}
+
+.card{
+  max-width:900px;
+  width:100%;
+  padding:50px;
+  border-radius:20px;
+  background:rgba(255,255,255,0.05);
+  backdrop-filter:blur(10px);
+  box-shadow:0 20px 60px rgba(0,0,0,0.4);
+}
+
+.card h2{
+  margin-top:0;
+  color:#e6c27a;
+  font-size:34px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+  margin-top:30px;
+}
+
+.label{
+  font-size:14px;
+  opacity:0.7;
+  margin-bottom:6px;
+}
+
+.value{
+  font-size:22px;
+}
+
+.highlight{
+  color:#e6c27a;
+  font-weight:600;
+}
+
+.footer{
+  text-align:center;
+  padding:60px 20px 80px;
+  font-size:18px;
+  opacity:0.8;
+}
+
+.footer a.social{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:40px;
+  height:40px;
+  margin-left:12px;
+  color:#e6c27a;
+  text-decoration:none;
+  border-radius:50%;
+  transition:0.18s ease;
+}
+.footer a.social svg{width:20px;height:20px;display:block}
+.footer a.social:hover{background:rgba(230,194,122,0.12);transform:translateY(-2px)}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:1000px){
+  .hero{
+    grid-template-columns:1fr;
+  }
+
+  .hero-left{
+    padding:60px 30px;
+  }
+
+  h1{
+    font-size:56px;
+  }
+
+
+  .grid{
+    grid-template-columns:1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero hero-left">
+  <div class="small-title">Cellotrion presenterar</div>
+  <h1>KORANYI<br>SPELAR<br>BACH</h1>
+  <div class="subtitle">En exklusiv konsertupplevelse på Teaterns Hus</div>
+  <a href="#biljetter" class="cta">Boka biljetter</a>
+</section>
+
+<!-- INFO -->
+<section class="section" id="biljetter">
+  <div class="card">
+    <h2>Konsertinformation</h2>
+
+    <div class="grid">
+      <div>
+        <div class="label">Datum & Tid</div>
+        <div class="value">29 mars kl 16</div>
+      </div>
+
+      <div>
+        <div class="label">Plats</div>
+        <div class="value">Teaterns Hus</div>
+      </div>
+
+      <div>
+        <div class="label">Ordinarie pris</div>
+        <div class="value">295 kr</div>
+      </div>
+
+      <div>
+        <div class="label">Ungdom upp till 25 år</div>
+        <div class="value">100 kr</div>
+      </div>
+    </div>
+
+    <p style="margin-top:40px;font-size:20px;">
+      Fika ingår och serveras <span class="highlight">kl 15</span>.
+    </p>
+
+    <p style="margin-top:40px;font-size:20px;">
+      Förköp via <a href="mailto:biljetter@cellotrion.se" class="highlight">biljetter@cellotrion.se</a>.
+    </p>
+  </div>
+</section>
+
+<div class="footer">
+  Välkomna till en stämningsfull Bach‑konsert.
+    <a class="social" href="https://www.instagram.com/cellotrion?igsh=MWYwOXBkbWt3eDI1dg%3D%3D" target="_blank" rel="noopener noreferrer" aria-label="Cellotrion på Instagram">
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <defs>
+          <linearGradient id="igGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#f58529"/>
+            <stop offset="30%" stop-color="#dd2a7b"/>
+            <stop offset="60%" stop-color="#8134af"/>
+            <stop offset="100%" stop-color="#515bd4"/>
+          </linearGradient>
+        </defs>
+        <rect x="0" y="0" width="24" height="24" rx="6" fill="url(#igGrad)" />
+        <path fill="#fff" d="M12 7.2a4.8 4.8 0 1 0 0 9.6 4.8 4.8 0 0 0 0-9.6zm0 7.92a3.12 3.12 0 1 1 0-6.24 3.12 3.12 0 0 1 0 6.24zM17.7 6.06a1.12 1.12 0 1 1-2.24 0 1.12 1.12 0 0 1 2.24 0z"/>
+      </svg>
+    </a>
+</div>
+
+</body>
+</html>
