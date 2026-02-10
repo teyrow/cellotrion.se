@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Koranyi spelar Bach</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+
+<style>
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  font-family:'Montserrat',sans-serif;
+  background:#111;
+  color:#f5f5f5;
+  overflow-x:hidden;
+}
+
+/* ===== PREMIUM HERO ===== */
+.hero{
+  position:relative;
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  padding:80px;
+  background:url('./poster.jpg') center/cover fixed no-repeat;
+  background-position: 85% 40;
+}
+
+.hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(90deg,rgba(0,0,0,0.85) 0%,rgba(0,0,0,0.65) 40%,rgba(0,0,0,0.2) 70%,rgba(0,0,0,0.1) 100%);
+}
+
+.hero-content{
+  position:relative;
+  max-width:900px;
+  animation:fadeUp 1.2s ease forwards;
+}
+
+.small-title{
+  color: #ffd684;
+  text-transform: uppercase;
+  letter-spacing:4px;
+  font-size:14px;
+  margin-bottom:20px;
+}
+
+h1{
+  font-size:96px;
+  line-height:0.9;
+  margin:0 0 25px 0;
+  color:#e6c27a;
+  font-weight:800;
+}
+
+.subtitle{
+  font-size:24px;
+  color:#eaeaea;
+  margin-bottom:40px;
+}
+
+.cta{
+  display:inline-block;
+  padding:18px 34px;
+  border-radius:40px;
+  background:#e6c27a;
+  color:#111;
+  text-decoration:none;
+  font-weight:600;
+  letter-spacing:1px;
+  transition:0.3s ease;
+}
+
+.cta:hover{
+  transform:translateY(-3px) scale(1.03);
+  box-shadow:0 15px 35px rgba(0,0,0,0.6);
+}
+
+/* ===== FLOATING INFO CARD ===== */
+.section{
+  padding:120px 20px;
+  display:flex;
+  justify-content:center;
+}
+
+.card{
+  max-width:900px;
+  width:100%;
+  padding:60px;
+  border-radius:24px;
+  background:rgba(255,255,255,0.06);
+  backdrop-filter:blur(16px);
+  box-shadow:0 30px 80px rgba(0,0,0,0.5);
+  transform:translateY(-120px);
+  animation:fadeUp 1.4s ease forwards;
+}
+
+.card h2{
+  margin-top:0;
+  color:#e6c27a;
+  font-size:38px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:50px;
+  margin-top:30px;
+}
+
+.label{
+  font-size:14px;
+  opacity:0.6;
+  margin-bottom:6px;
+}
+
+.value{
+  font-size:24px;
+}
+
+.highlight{
+  color:#e6c27a;
+  font-weight:600;
+}
+
+.footer{
+  text-align:center;
+  padding:40px 20px 100px;
+  font-size:18px;
+  opacity:0.7;
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeUp{
+  from{
+    opacity:0;
+    transform:translateY(40px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:900px){
+  .hero{
+    padding:60px 25px;
+    background-attachment:scroll;
+  }
+
+  h1{
+    font-size:56px;
+  }
+
+  .subtitle{
+    font-size:20px;
+  }
+
+  .grid{
+    grid-template-columns:1fr;
+  }
+
+  .card{
+    padding:40px 30px;
+    transform:translateY(-80px);
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- PREMIUM HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="small-title">Cellotrion presenterar</div>
+    <h1>KORANYI<br>SPELAR<br>BACH</h1>    
+    <a href="#biljetter" class="cta">Boka biljetter</a>
+  </div>
+</section>
+
+<!-- FLOATING INFO -->
+<section class="section" id="biljetter">
+  <div class="card">
+    <h2>Konsertinformation</h2>
+
+    <div class="grid">
+      <div>
+        <div class="label">Datum & Tid</div>
+        <div class="value">29 mars kl 16</div>
+      </div>
+
+      <div>
+        <div class="label">Plats</div>
+        <div class="value">Teaterns Hus</div>
+      </div>
+
+      <div>
+        <div class="label">Ordinarie pris</div>
+        <div class="value">295 kr</div>
+      </div>
+
+      <div>
+        <div class="label">Ungdom upp till 25 år</div>
+        <div class="value">100 kr</div>
+      </div>
+    </div>
+
+    <p style="margin-top:40px;font-size:22px;">
+      Fika ingår och serveras <span class="highlight">kl 15</span>.
+    </p>
+  </div>
+</section>
+
+<div class="footer">
+  Välkomna till en stämningsfull Bach-konsert.
+</div>
+
+</body>
+</html>
