@@ -4,10 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Koranyi spelar Bach</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;800&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box}
+
 
 body{
   margin:0;
@@ -15,17 +18,23 @@ body{
   background:#111;
   color:#f5f5f5;
   overflow-x:hidden;
+  --highlight: #ffd684;
+}
+a {
+  color:inherit;
+  text-decoration: dotted underline;
+
 }
 
 /* ===== PREMIUM HERO ===== */
 .hero{
   position:relative;
-  min-height:100vh;
+  min-height: 80vh;
   display:flex;
   align-items:center;
   padding:80px;
   background:url('./poster.jpg') center/cover fixed no-repeat;
-  background-position: 85% 40;
+  background-position: 85% 40%;
 }
 
 .hero::before{
@@ -50,11 +59,15 @@ body{
 }
 
 h1{
-  font-size:96px;
-  line-height:0.9;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+
+  font-size:min(16vw, 8em);
+  line-height:1.1;
   margin:0 0 25px 0;
-  color:#e6c27a;
-  font-weight:800;
+  color:var(--highlight); 
 }
 
 .subtitle{
@@ -67,7 +80,7 @@ h1{
   display:inline-block;
   padding:18px 34px;
   border-radius:40px;
-  background:#e6c27a;
+  background:var(--highlight);
   color:#111;
   text-decoration:none;
   font-weight:600;
@@ -101,8 +114,8 @@ h1{
 
 .card h2{
   margin-top:0;
-  color:#e6c27a;
-  font-size:38px;
+  color:var(--highlight);
+  font-size:min(6vw, 4em);
 }
 
 .grid{
@@ -120,10 +133,11 @@ h1{
 
 .value{
   font-size:24px;
+  line-height: 1.4em;
 }
 
 .highlight{
-  color:#e6c27a;
+  color:var(--highlight);
   font-weight:600;
 }
 
@@ -153,10 +167,6 @@ h1{
     background-attachment:scroll;
   }
 
-  h1{
-    font-size:56px;
-  }
-
   .subtitle{
     font-size:20px;
   }
@@ -179,7 +189,8 @@ h1{
 <section class="hero">
   <div class="hero-content">
     <div class="small-title">Cellotrion presenterar</div>
-    <h1>KORANYI<br>SPELAR<br>BACH</h1>    
+    <h1>KORANYI<br>SPELAR<br>BACH</h1>
+    <br>
     <a href="#biljetter" class="cta">Boka biljetter</a>
   </div>
 </section>
@@ -192,12 +203,16 @@ h1{
     <div class="grid">
       <div>
         <div class="label">Datum & Tid</div>
-        <div class="value">29 mars kl 16</div>
+        <div class="value">
+          29 mars kl 16 <br>
+          Fika ingår och serveras <span class="highlight">kl 15</span>.
+        </div>
+        
       </div>
 
       <div>
         <div class="label">Plats</div>
-        <div class="value">Teaterns Hus</div>
+        <div class="value"><a href="https://maps.app.goo.gl/acaShumWtyBYhGDJ9" target="_blank" >Teaterns Hus Linköping</a></div>
       </div>
 
       <div>
@@ -209,17 +224,19 @@ h1{
         <div class="label">Ungdom upp till 25 år</div>
         <div class="value">100 kr</div>
       </div>
+
+      <div>
+        <div class="label">Förköp via</div>
+        <div class="value">
+          <a href="mailto: biljetter@cellotrion.se">biljetter@cellotrion.se</a>
+        </div>
+      </div>
+
     </div>
 
-    <p style="margin-top:40px;font-size:22px;">
-      Fika ingår och serveras <span class="highlight">kl 15</span>.
-    </p>
   </div>
 </section>
 
-<div class="footer">
-  Välkomna till en stämningsfull Bach-konsert.
-</div>
 
 </body>
 </html>
