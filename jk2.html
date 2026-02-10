@@ -27,14 +27,16 @@ a {
 }
 
 /* ===== PREMIUM HERO ===== */
-.hero{
-  position:relative;
-  min-height: 80vh;
-  display:flex;
-  align-items:center;
-  padding:80px;
-  background:url('./poster.jpg') center/cover fixed no-repeat;
-  background-position: 85% 40%;
+.hero {
+    position: relative;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    padding: 80px;
+    background: url(./poster.jpg) fixed no-repeat;
+    background-size: min(70vw, 55em);
+    background-position-x: right;
+    background-position-y: -14vw;
 }
 
 .hero::before{
@@ -162,11 +164,12 @@ h1{
 
 /* ===== RESPONSIVE ===== */
 @media(max-width:900px){
-  .hero{
-    padding:60px 25px;
-    background-attachment:scroll;
-  }
-
+  .hero {
+        padding: 60px 25px;
+        background-attachment: scroll;
+        min-height: 0;
+        background-position-y: 0;
+    }
   .subtitle{
     font-size:20px;
   }
