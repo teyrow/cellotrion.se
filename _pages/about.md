@@ -1,8 +1,12 @@
 ---
-permalink: /about/
-title: "About"
+permalink: /om/
+title: "Om oss"
 ---
 
-Tempor velit sint sunt ipsum tempor enim ad qui ullamco. Est dolore anim ad velit duis dolore minim sunt aliquip amet commodo labore. Ut eu pariatur aute ea aute excepteur laborum. Esse ea esse excepteur minim mollit qui cillum excepteur ex dolore magna. Labore deserunt fugiat incididunt incididunt sint ea. Consequat dolore aute laboris quis proident quis non et est consectetur ex eiusmod sit culpa.
+Cellotrion bjuder på en varm och lättsam konsertupplevelse där vacker musik möter gemenskap. Vår repertoar sträcker sig från Bach och Beethoven till Chopin, Tjajkovskij, Satie, Fauré, Piazzolla och andra tonsättare som rör sig mellan det klassiska, det lyriska och det folkliga. Vi tycker om att blanda stilar och epoker för att skapa en levande och varierad musikalisk stund.
 
-Cupidatat ea do et in excepteur in. Ad nostrud ut est esse eu duis ea sunt eiusmod. Aliquip tempor veniam sint elit fugiat. Velit incididunt laboris amet incididunt labore dolore irure velit excepteur commodo deserunt laborum. Consectetur eu fugiat veniam veniam Lorem labore magna eiusmod. Ea occaecat reprehenderit pariatur consectetur minim labore ut aliquip.
+Under våra konserter pratar vi gärna med publiken mellan styckena och berättar kort om musiken, instrumenten eller det som inspirerat oss. Stämningen är alltid familjär och nära – vi vill att alla ska känna sig välkomna, oavsett om man är van konsertbesökare eller nyfiken förstagångslyssnare.
+
+En viktig del av våra framträdanden är gemenskapen efteråt. Därför bjuder vi alltid på kaffe och bullar när musiken klingat ut. Det ger tid för samtal, skratt och möten – en enkel men värdefull stund där vi får lära känna vår publik och där musiken får fortsätta leva i samtalet.
+
+Cellotrion skapar konserter som förenar naturens lugn, cellons varma klang och glädjen i att mötas. Välkommen att dela en stund med oss.

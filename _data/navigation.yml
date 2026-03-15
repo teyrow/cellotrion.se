@@ -1,7 +1,5 @@
 main:
   - title: "Posts"
     url: /posts/
-  - title: "About"
-    url: /about/
-  - title: "Splash"
-    url: /splash/
+  - title: "Om oss"
+    url: /om/
