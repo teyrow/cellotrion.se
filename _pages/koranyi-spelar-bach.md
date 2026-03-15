@@ -4,8 +4,8 @@ title: "Koranyi spelar Bach"
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
-  image: /assets/images/jk-affisch.png
-  overlay_image: /assets/images/jk-affisch.png
+  overlay_image: /assets/images/Koranyi_Jakob_pc_Anna-Lena_Ahlström_6_300.jpg
+  caption: "Foto: Anna-Lena_Ahlström"
 layout: single
 ---
 

@@ -16,7 +16,7 @@ excerpt: "Vi har plockat fram essensen i skön musik och består av endast celli
 #   - excerpt: 'Nullam suscipit et nam, tellus velit pellentesque at malesuada, enim eaque. Quis nulla, netus tempor in diam gravida tincidunt, *proin faucibus* voluptate #felis id sollicitudin. Centered with `type="center"`'
 feature_row:
   - image_path: assets/images/jk-affisch.png
-    image_caption: "Photo: Anna-Lena_Ahlström"
+    image_caption: "Foto: Anna-Lena_Ahlström"
     alt: "Koranyi spelar Bach"
     title: "Koranyi spelar Bach"
     excerpt: |-
