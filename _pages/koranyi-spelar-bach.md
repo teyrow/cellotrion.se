@@ -11,17 +11,23 @@ layout: single
 
 ## Jakob Koranyi spelar Bachs cellosviter nr 4, 5 och 6.  
 
-### Datum: 29 mars
 
-### Tid: kl 15
+| --------         | ------ | 
+| Datum            | 29 mars     | 
+| Tid              | kl 15 | 
+| Plats            | [Teaterns Hus](https://maps.app.goo.gl/acaShumWtyBYhGDJ9) Linköping | 
 
-### Plats: [Teaterns Hus, Linköping](https://maps.app.goo.gl/acaShumWtyBYhGDJ9)
+### Köp biljetter
+
+| ---------------------| ------ |
+| Originalpris           | 200 kr  |
+| Ungdom (upp till 25 år) | 100 kr  |
+| Swish            | [swish: 0730360396](https://app.swish.nu/1/p/sw/?sw=0730360396&msg=Koranyi%3A%20&edit=msg&src=qr)     |
+| boka utan swish         | [mejl till biljetter@cellotrion.se](mailto:biljetter@cellotrion.se)
+| Fika ingår            | Ja      |
 
 ### Fika ingår
 {: .notice--warning }
-
-### Köp biljett: [swish...](swish://)
-
 
 
 Varmt välkomna!  
