@@ -8,8 +8,19 @@ header:
   caption: "Foto: Anna-Lena_Ahlström"
 layout: single
 ---
+Välkommen till en unik konsert!
 
-### Jakob Koranyi spelar Bachs cellosviter nr 4, 5 och 6.  
+Världscellisten Jakob Koranyi besöker Linköping och spelar Bachs älskade cellosviter nr 4, 5 och 6.
+
+Kaffe/te/saft och kardemummabulle ingår i entréavgiften och serveras kl 15-16 (drop in).
+Därefter börjar konserten där Jakob spelar de tre sviterna sammanhängande utan paus.
+
+[Om Jakob Koranyi](https://www.jakobkoranyi.com/){: .btn .btn--primary}
+
+[Lyssningstips](#jakobkoranyi){: .btn .btn--primary}
+
+
+### När och var
 
 
 | --------         | ------ | 
