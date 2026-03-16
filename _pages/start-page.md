@@ -11,7 +11,7 @@ header:
   #   - label: "Learn More"
   #     url: "/terms/"
   #caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
-excerpt: "Vi har plockat fram essensen i skön musik och består av endast cellister. Upplevelsen kröner vi gärna med kaffe och gott fika. Hoppas vi ses!"
+excerpt: "Vi har plockat fram essensen i skön musik och består av endast cellister. Upplevelsen kröner vi gärna med kaffe och gott fika. Välkommen till vår sida!"
 # intro: 
 #   - excerpt: 'Nullam suscipit et nam, tellus velit pellentesque at malesuada, enim eaque. Quis nulla, netus tempor in diam gravida tincidunt, *proin faucibus* voluptate #felis id sollicitudin. Centered with `type="center"`'
 feature_row:
