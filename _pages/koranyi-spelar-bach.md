@@ -31,11 +31,10 @@ Därefter börjar konserten där Jakob spelar de tre sviterna sammanhängande ut
 ### Köp biljetter
 
 | ------------------------| ------ |
-| Originalpris            | 295 kr  |
+| Ordinarie pris          | 295 kr  |
 | Ungdom (upp till 25 år) | 100 kr  |
-| Swish                   | [swish: 0730360396](https://app.swish.nu/1/p/sw/?sw=0730360396&msg=Koranyi%3A%20&edit=msg&src=qr)     |
-| boka utan swish         | [mejl till biljetter@cellotrion.se](mailto:biljetter@cellotrion.se)
-| Fika ingår              | Ja      |
+| Swish                   | [0730360396](https://app.swish.nu/1/p/sw/?sw=0730360396&msg=Koranyi%3A%20&edit=msg&src=qr)     |
+| Förboka                 | [biljetter@cellotrion.se](mailto:biljetter@cellotrion.se) |
 
 ### Fika ingår
 {: .notice--warning }
