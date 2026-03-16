@@ -17,7 +17,7 @@ Därefter börjar konserten där Jakob spelar de tre sviterna sammanhängande ut
 
 [Om Jakob Koranyi](https://www.jakobkoranyi.com/){: .btn .btn--primary}
 
-[Lyssningstips](#jakobkoranyi){: .btn .btn--primary}
+[Lyssningstips](/koranyi-lyssningstips/){: .btn .btn--primary}
 
 
 ### När och var
