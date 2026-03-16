@@ -5,11 +5,11 @@ search: false
 
 @charset "utf-8";
 
-$primary-color: {{ site.primary_color | default: "#ffd684" }};
+$primary-color: {{ site.primary_color | default: "#d1bf73" }};
 $background-color: {{ site.background_color | default: "#383838" }};
 
 h1, h2, h3, h4, h5, h6 {
-  color: {{ site.headline_color | default: "#ffd684" }};
+  color: {{ site.headline_color | default: "#d1bf73" }};
 }
 
 // $default-sans-serif: "Playfair Display, serif";
