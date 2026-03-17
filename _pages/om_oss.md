@@ -10,6 +10,4 @@ En viktig del av våra framträdanden är gemenskapen. Därför bjuder vi på ka
 
 Kontakta oss gärna på [info@cellotrion.se](mailto:info@cellotrion.se) eller följ oss på [Instagram](https://www.instagram.com/cellotrion/) för att hålla dig uppdaterad om våra kommande konserter och evenemang. Vi ser fram emot att träffa dig!
 
-----
-Cellotrion:
-:   Märta Nilsson, Andreas Josephson, Britta Hjelmfors
+<cite>Märta Nilsson, Andreas Josephson, Britta Hjelmfors</cite>
