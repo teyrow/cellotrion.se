@@ -19,6 +19,8 @@ Därefter börjar konserten där Jakob spelar de tre sviterna sammanhängande ut
 
 [Lyssningstips](/koranyi-lyssningstips/){: .btn .btn--primary}
 
+[Lästips](https://www.epochtimes.se/Musikaliska-masterverk-Bachs-6-solosviter-for-cello){: .btn .btn--primary}
+
 
 ### När och var
 
