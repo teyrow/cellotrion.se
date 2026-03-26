@@ -25,21 +25,23 @@ Därefter börjar konserten där Jakob spelar de tre sviterna sammanhängande ut
 ### När och var
 
 
-| --------         | ------ | 
-| Datum            | 29 mars     | 
-| Tid              | kl 15 | 
-| Plats            | [Teaterns Hus](https://maps.app.goo.gl/acaShumWtyBYhGDJ9) Linköping | 
+| ---------------- | --------------------------------------------------------------------|
+| Datum            | 29 mars                                                             |
+| Tid              | kl 15                                                               |
+| Plats            | [Teaterns Hus](https://maps.app.goo.gl/acaShumWtyBYhGDJ9) Linköping |
 
 ### Köp biljetter
 
-| ------------------------| ------ |
-| Ordinarie pris          | 295 kr  |
-| Ungdom (upp till 25 år) | 100 kr  |
-| Swish                   | [0730360396](https://app.swish.nu/1/p/sw/?sw=0730360396&msg=Koranyi%3A%20&edit=msg&src=qr)     |
-| Förboka                 | [biljetter@cellotrion.se](mailto:biljetter@cellotrion.se) |
+
+|  |  |
+| ------------------------|-------------------------------------------------------------------------------------------|
+| Ordinarie pris          | 295 kr                                                                                    |
+| Ungdom (upp till 25 år) | 100 kr                                                                                    |
+| Swish                   | [0730360396](https://app.swish.nu/1/p/sw/?sw=0730360396&msg=Koranyi%3A%20&edit=msg&src=qr)|
+| Förboka                 | [biljetter@cellotrion.se](mailto:biljetter@cellotrion.se)                                 |
 
 ### Fika ingår
 {: .notice--warning }
 
 
-Varmt välkomna!  
+Varmt välkomna!
