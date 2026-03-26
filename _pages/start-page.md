@@ -7,13 +7,7 @@ header:
   overlay_color: "#000"
   overlay_filter: "0.5"
   overlay_image: /assets/images/tre_celli.png
-  # actions:
-  #   - label: "Learn More"
-  #     url: "/terms/"
-  #caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 excerpt: "Vi har plockat fram essensen i skön musik och består av endast cellister. Upplevelsen kröner vi gärna med kaffe och gott fika. Välkommen till vår sida!"
-# intro: 
-#   - excerpt: 'Nullam suscipit et nam, tellus velit pellentesque at malesuada, enim eaque. Quis nulla, netus tempor in diam gravida tincidunt, *proin faucibus* voluptate #felis id sollicitudin. Centered with `type="center"`'
 feature_row:
   - image_path: assets/images/jk-affisch.png
     image_caption: "Foto: Anna-Lena_Ahlström"
