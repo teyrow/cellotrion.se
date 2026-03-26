@@ -33,7 +33,7 @@ Därefter börjar konserten där Jakob spelar de tre sviterna sammanhängande ut
 ### Köp biljetter
 
 
-|  |  |
+
 | ------------------------|-------------------------------------------------------------------------------------------|
 | Ordinarie pris          | 295 kr                                                                                    |
 | Ungdom (upp till 25 år) | 100 kr                                                                                    |
