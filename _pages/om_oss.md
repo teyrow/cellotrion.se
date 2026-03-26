@@ -1,6 +1,10 @@
 ---
 permalink: /om/
 title: "Om oss"
+excerpt: "Vi har plockat fram essensen i skön musik och består av endast cellister. Upplevelsen kröner vi gärna med kaffe och gott fika. Välkommen till vår sida!"
+header:
+  image: assets/images/cellotrion.jpeg
+  teaser: assets/images/cellotrion.jpeg
 ---
 Cellotrion bjuder på en varm och lättsam konsertupplevelse där vacker musik möter gemenskap. Vår repertoar sträcker sig från Bach och Beethoven till Chopin, Tjajkovskij, Satie, Fauré, Piazzolla och andra tonsättare som rör sig mellan det klassiska, det lyriska och det folkliga. Vi tycker om att blanda stilar och epoker för att skapa en levande och varierad musikalisk stund.
 
@@ -10,4 +14,4 @@ En viktig del av våra framträdanden är gemenskapen. Därför bjuder vi på ka
 
 Kontakta oss gärna på [info@cellotrion.se](mailto:info@cellotrion.se) eller följ oss på [Instagram](https://www.instagram.com/cellotrion/) för att hålla dig uppdaterad om våra kommande konserter och evenemang. Vi ser fram emot att träffa dig!
 
-<cite>Märta Nilsson, Andreas Josephson, Britta Hjelmfors</cite>
+<cite>Märta Nilsson, Britta Hjelmfors, Andreas Josephson</cite>
