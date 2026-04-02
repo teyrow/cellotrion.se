@@ -21,7 +21,7 @@ Adress: [Källgårdsvägen 6, Vreta kloster](https://maps.app.goo.gl/E3WzZ2ZKS6w
 
 
 Bokcafé med musik av Cellotrion, och fika förstås.  
-Du som är eller blir medlem fär välja en bok om konst och kultur.
+Du som är eller blir medlem får välja en bok om konst och kultur.
 
 KONTAKT:  
 Håkan Nilsson  
