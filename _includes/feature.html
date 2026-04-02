@@ -1,0 +1,39 @@
+{% if include.post  %}
+  {% assign p = include.post %}
+{% else %}
+  {% assign p = page %}
+{% endif %}
+
+<section class="page__content" itemprop="text">
+  <div class="feature__wrapper">
+      <div class="feature__item--left">
+        <div class="archive__item">
+          {% if p.image_path %}
+            <div class="archive__item-teaser">
+              <img src="{{ p.image_path | relative_url }}"
+                  alt="{% if p.alt %}{{ p.alt }}{% endif %}">
+              {% if p.image_caption %}
+                <span class="archive__item-caption">{{ p.image_caption | markdownify | remove: "<p>" | remove: "</p>" }}</span>
+              {% endif %}
+            </div>
+          {% endif %}
+
+          <div class="archive__item-body">
+            {% if p.title %}
+              <h2 class="archive__item-title">{{ p.title }}</h2>
+            {% endif %}
+            
+            <div class="archive__item-excerpt">
+              {% if include.post %}
+                {{ p.excerpt }}
+                <hr>
+                <p><a href="{{ p.url | relative_url }}" class="btn btn--primary">{{ p.btn_label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a></p>
+              {% else %}
+                {{ content }}
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
