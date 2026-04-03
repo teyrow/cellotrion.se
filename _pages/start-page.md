@@ -12,8 +12,6 @@ excerpt: "Vi har plockat fram essensen i skön musik och består av endast celli
 
 ## Evenemang
 
-{% for post in site.posts -%}
-  {% if post.categories contains "evenemang" -%}    
-    {% include feature.html post=post -%}
-  {% endif %}
+{% for post in site.categories.evenemang -%}
+  {% include feature.html post=post -%}  
 {% endfor %}
