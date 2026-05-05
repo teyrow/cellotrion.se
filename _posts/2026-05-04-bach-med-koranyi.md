@@ -1,7 +1,7 @@
 ---
 title: "Bach med Koranyi"
 layout: event
-date: 2026-05-04T10:00:00+00:00
+date: 2036-05-04T10:00:00+00:00
 ev_date: Onsdag 17 juni kl. 17.00
 categories: [evenemang]
 header:
