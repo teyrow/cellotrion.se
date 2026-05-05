@@ -3,8 +3,12 @@ permalink: /kontakt/
 title: "Kontakt"
 excerpt: "Har du frågor eller vill boka en konsert, kontakta oss!"
 header:
-  image: assets/images/celltrio-wide.png
-  teaser: assets/images/celltrio-wide.png
+  image: assets/images/skrivmaskin.jpeg
+  teaser: assets/images/skrivmaskin.jpeg
 ---
 
-Kontakta oss gärna på [info@cellotrion.se](mailto:info@cellotrion.se) eller följ oss på [Instagram](https://www.instagram.com/cellotrion/) för att hålla dig uppdaterad om våra kommande konserter och evenemang. Vi ser fram emot att träffa dig!
+Skulle du vilja ha besök av Cellotrion och vårt koncept eller kanske bara anlita oss som musiker? Skicka ett mejl och berätta om dina tankar.
+
+[<i class="fa fa-fw fa-envelope" aria-hidden="true"></i> info@cellotrion.se](mailto:info@cellotrion.se)  
+[<i class="fa fa-fw fa-phone" aria-hidden="true"></i> 0730-360396](tel: 0730-360396) (Britta)  
+[<i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram](https://www.instagram.com/cellotrion/)  

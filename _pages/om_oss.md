@@ -12,6 +12,6 @@ Under våra konserter pratar vi gärna med publiken mellan styckena och berätta
 
 En viktig del av våra framträdanden är gemenskapen. Därför bjuder vi på kaffe och bullar och det blir en stund för att mötas, prata och dela upplevelsen tillsammans. 
 
-Kontakta oss gärna på [info@cellotrion.se](mailto:info@cellotrion.se) eller följ oss på [Instagram](https://www.instagram.com/cellotrion/) för att hålla dig uppdaterad om våra kommande konserter och evenemang. Vi ser fram emot att träffa dig!
+Följ oss gärna på [Instagram](https://www.instagram.com/cellotrion/) för att hålla dig uppdaterad om våra kommande konserter och evenemang. Vi ser fram emot att träffa dig!
 
 <cite>Märta Nilsson, Britta Hjelmfors, Andreas Josephson</cite>
