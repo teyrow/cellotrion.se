@@ -1,3 +1,5 @@
 main:
   - title: "Om oss"
     url: /om/
+  - title: "Kontakt"
+    url: /kontakt/
