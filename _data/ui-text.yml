@@ -48,6 +48,19 @@ sv: &DEFAULT_SV
   search_algolia_no_results  :
   results_found              : "Resultat funna"
   back_to_top                : "Tillbaka till toppen"
+  months:
+    - "Januari"
+    - "Februari"
+    - "Mars"
+    - "April"
+    - "Maj"
+    - "Juni"
+    - "Juli"
+    - "Augusti"
+    - "September"
+    - "Oktober"
+    - "November"
+    - "December"
 sv-SE:
   <<: *DEFAULT_SV
 sv-FI:
