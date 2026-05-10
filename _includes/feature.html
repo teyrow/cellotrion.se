@@ -25,10 +25,11 @@
             
             <div class="archive__item-excerpt">
               {% if include.post %}
-                {{ p.excerpt }}
+                {{ p.excerpt | markdownify }}
                 <hr>
                 <p><a href="{{ p.url | relative_url }}" class="btn btn--primary">{{ p.btn_label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a></p>
               {% else %}
+                {% include event.html post=p %}
                 {{ content }}
               {% endif %}
             </div>

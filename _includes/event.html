@@ -1,0 +1,27 @@
+{% if include.post %}
+  {% assign p = include.post %}
+{% else %}
+  {% assign p = page %}
+{% endif %}
+
+{% if p.ev_date %}
+  {% assign m = p.ev_date | date: "%-m" | minus: 1 %}
+  <h3 id="när-och-var">När och var<a class="header-link" href="#när-och-var" title="Permalink"><span class="sr-only">Permalink</span><i class="fas fa-link"></i></a></h3>
+  <table>
+    <tbody>
+      <tr>
+        <td>Datum</td>
+        <td>{{ p.ev_date | date: "%-d" }} {{ site.data.ui-text[site.locale].months[m] }}</td>
+      </tr>
+      <tr>
+        <td>Tid</td>
+        <td>kl {{ p.ev_date | date: "%-H" }}</td>
+      </tr>
+      <tr>
+        <td>Plats</td>
+        <td><a href="{{ p.ev_location.url }}">{{ p.ev_location.title }}</a></td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="event-date"></p>
+{% endif %}
