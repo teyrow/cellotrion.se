@@ -2,7 +2,7 @@
 title: "Bokcafé med Cellotrion i Galleri Vreta kloster"
 layout: event
 date: 2026-04-01T08:00:00+00:00
-ev_date: Söndagen 19 april kl. 17.00
+ev_date: 2026-04-19T17:00:00+01:00
 categories: [evenemang]
 header:
   overlay_color: "#000"
