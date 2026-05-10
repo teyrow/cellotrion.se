@@ -69,6 +69,12 @@ footer:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://www.instagram.com/cellotrion"
+    - label: "E-post info@cellotrion.se"
+      icon: "fa fa-fw fa-envelope"
+      url: "mailto:info@cellotrion.se"
+    - label: "Telefon"
+      icon: "fa fa-fw fa-phone"
+      url: "tel:0730-360396"
 
 defaults:
   # _posts
