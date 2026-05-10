@@ -63,9 +63,9 @@ author:
 
 footer:
   links:
-    # - label: "Facebook"
-    #   icon: "fab fa-fw fa-square-facebook"
-    #   url: "https://facebook.com/"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-square-facebook"
+      url: "https://www.facebook.com/profile.php?id=61588980496579"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://www.instagram.com/cellotrion"
