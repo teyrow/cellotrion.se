@@ -40,7 +40,7 @@ sv: &DEFAULT_SV
   comment_form_website_label : "Webdsida (valfritt)"
   comment_btn_submit         : "Skicka en kommentar"
   comment_btn_submitted      : "Kommentaren har tagits emot"
-  comment_success_msg        : "Tack för din kommentar! Den kommer att visas på sidan så fort den har godkännts."
+  comment_success_msg        : "Tack för din kommentar! Den kommer att visas på sidan så fort den har godkänts."
   comment_error_msg          : "Tyvärr det har blivit något fel i ett av fälten, se till att du fyllt i alla obligatoriska fält och försök igen."
   loading_label              : "Laddar..."
   search_label_text          :
