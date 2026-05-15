@@ -11,7 +11,7 @@ header:
   overlay_color: "#000"
   overlay_filter: "0.5"
   overlay_image: /assets/images/tre_celli.png
-excerpt: "Jakob Koranyi följer upp succén fran i mars och spelar Bachs cellosviter nr 1, 2 och 3. Varmt välkomna till en ljuvlig stund!"
+excerpt: "Jakob Koranyi följer upp succén från i mars och spelar Bachs cellosviter nr 1, 2 och 3. Varmt välkomna till en ljuvlig stund!"
 
 image_path: assets/images/bach-koranyi.png
 alt: "Affisch Bach med Koranyi"
