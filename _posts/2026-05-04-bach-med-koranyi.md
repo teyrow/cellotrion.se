@@ -13,7 +13,7 @@ header:
   overlay_image: /assets/images/tre_celli.png
 excerpt: "Jakob Koranyi följer upp succén fran i mars och spelar Bachs cellosviter nr 1, 2 och 3. Varmt välkomna till en ljuvlig stund!"
 
-image_path: assets/images/bach-korany-1-3.png
+image_path: assets/images/bach-koranyi.png
 alt: "Affisch Bach med Koranyi"
 btn_label: "Läs mer"
 ---
@@ -21,11 +21,11 @@ btn_label: "Läs mer"
 ### Köp biljetter
 
 
-| ------------------------|-------------------------------------------------------------------------------------------|
-| Ordinarie pris          | 295 kr                                                                                    |
-| Ungdom (upp till 25 år) | 100 kr                                                                                    |
-| Swish                   | [1232285567](https://app.swish.nu/1/p/sw/?sw=1232285567&msg=Bach%20med%20Koranyi&edit=msg&src=qr)|
-| Förboka                 | [biljetter@cellotrion.se](mailto:biljetter@cellotrion.se)                                 |
+| ------------------------|--------------------------------------------------------------------------------------------------|
+| Ordinarie pris          | 295 kr                                                                                           |
+| Ungdom (upp till 25 år) | 100 kr                                                                                           |
+| Swish - Betalningsbekräftelsen fungerar som biljett                   | [1232285567](https://app.swish.nu/1/p/sw/?sw=1232285567&msg=Bach%20med%20Koranyi&edit=msg&src=qr)|
+| Förboka                 | [biljetter@cellotrion.se](mailto:biljetter@cellotrion.se)                                        |
 
 ### Fika ingår
 {: .notice--warning }
