@@ -24,7 +24,7 @@ btn_label: "Läs mer"
 | ------------------------|-------------------------------------------------------------------------------------------|
 | Ordinarie pris          | 295 kr                                                                                    |
 | Ungdom (upp till 25 år) | 100 kr                                                                                    |
-| Swish                   | [0730360396](https://app.swish.nu/1/p/sw/?sw=0730360396&msg=Koranyi%3A%20&edit=msg&src=qr)|
+| Swish                   | [1232285567](https://app.swish.nu/1/p/sw/?sw=1232285567&msg=Bach%20med%20Koranyi&edit=msg&src=qr)|
 | Förboka                 | [biljetter@cellotrion.se](mailto:biljetter@cellotrion.se)                                 |
 
 ### Fika ingår
