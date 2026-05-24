@@ -15,8 +15,14 @@ excerpt: "Jakob Koranyi följer upp succén från i mars och spelar Bachs cellos
 
 image_path: assets/images/bach-koranyi.png
 alt: "Affisch Bach med Koranyi"
-btn_label: "Läs mer"
+btn_label: "Biljetter och mer"
 ---
+
+[Köp biljetter](#köp-biljetter){: .btn .btn--primary .btn--large}
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FYUQYz-0yGw?si=yXurL5e-UDN6eKkE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+{% include event_when_where.html p=page %}
 
 ### Köp biljetter
 
