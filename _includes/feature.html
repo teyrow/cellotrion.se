@@ -10,8 +10,11 @@
         <div class="archive__item">
           {% if p.image_path %}
             <div class="archive__item-teaser">
-              <img src="{{ p.image_path | relative_url }}"
-                  alt="{% if p.alt %}{{ p.alt }}{% endif %}">
+                <a href="{{ p.url | relative_url }}{{ p.teaser_hash | default: '' }}" class="archive__item-link">
+                <img src="{{ p.image_path | relative_url }}"
+                    alt="{% if p.alt %}{{ p.alt }}{% endif %}">
+                </a>
+              
               {% if p.image_caption %}
                 <span class="archive__item-caption">{{ p.image_caption | markdownify | remove: "<p>" | remove: "</p>" }}</span>
               {% endif %}

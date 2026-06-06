@@ -16,6 +16,7 @@ excerpt: "Jakob Koranyi följer upp succén från i mars och spelar Bachs cellos
 image_path: assets/images/bach-koranyi.png
 alt: "Affisch Bach med Koranyi"
 btn_label: "Biljetter och mer"
+teaser_hash: "#köp-biljetter"
 ---
 
 [Köp biljetter](#köp-biljetter){: .btn .btn--primary .btn--large}
@@ -30,8 +31,11 @@ btn_label: "Biljetter och mer"
 | ------------------------|--------------------------------------------------------------------------------------------------|
 | Ordinarie pris          | 295 kr                                                                                           |
 | Ungdom (upp till 25 år) | 100 kr                                                                                           |
-| Swish - Betalningsbekräftelsen fungerar som biljett                   | [1232285567](https://app.swish.nu/1/p/sw/?sw=1232285567&msg=Bach%20med%20Koranyi&edit=msg&src=qr)|
 | Förboka                 | [biljetter@cellotrion.se](mailto:biljetter@cellotrion.se)                                        |
+| Swish - Betalningsbekräftelsen fungerar som biljett                   | [1232285567](https://app.swish.nu/1/p/sw/?sw= &msg=Bach%20med%20Koranyi&edit=msg&src=qr)|
+
+![Bach med Koranyi QR-kod](/assets/images/bach-med-koranyi-qr.png){: .align-center }
+
 
 ### Fika ingår
 {: .notice--warning }
