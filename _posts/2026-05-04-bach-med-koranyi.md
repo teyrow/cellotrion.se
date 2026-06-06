@@ -32,7 +32,7 @@ teaser_hash: "#köp-biljetter"
 | Ordinarie pris          | 295 kr                                                                                           |
 | Ungdom (upp till 25 år) | 100 kr                                                                                           |
 | Förboka                 | [biljetter@cellotrion.se](mailto:biljetter@cellotrion.se)                                        |
-| Swish - Betalningsbekräftelsen fungerar som biljett                   | [1232285567](https://app.swish.nu/1/p/sw/?sw= &msg=Bach%20med%20Koranyi&edit=msg&src=qr)|
+| Swish - Betalningsbekräftelsen fungerar som biljett                   | [1232285567](https://app.swish.nu/1/p/sw/?sw=1232285567&msg=Bach%20med%20Koranyi&edit=msg&src=qr)|
 
 ![Bach med Koranyi QR-kod](/assets/images/bach-med-koranyi-qr.png){: .align-center }
 
