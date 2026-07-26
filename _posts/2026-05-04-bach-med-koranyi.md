@@ -6,7 +6,7 @@ ev_date: 2026-06-17T19:00:00+02:00
 ev_location:
   title: Teaterns Hus, Linköping
   url: https://maps.app.goo.gl/acaShumWtyBYhGDJ9
-categories: [evenemang, kommande]
+categories: [evenemang]
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
@@ -28,17 +28,20 @@ teaser_hash: "#köp-biljetter"
 ### Köp biljetter
 
 
-| ------------------------|--------------------------------------------------------------------------------------------------|
-| Ordinarie pris          | 295 kr                                                                                           |
-| Ungdom (upp till 25 år) | 100 kr                                                                                           |
-| Förboka                 | [biljetter@cellotrion.se](mailto:biljetter@cellotrion.se)                                        |
-| Swish - Betalningsbekräftelsen fungerar som biljett                   | [1232285567](https://app.swish.nu/1/p/sw/?sw=1232285567&msg=Bach%20med%20Koranyi&edit=msg&src=qr)|
+|-----------------------------------------------------|-----------------------------------------------------------|
+| Ordinarie pris                                      | 295 kr                                                    |
+| Ungdom (upp till 25 år)                             | 100 kr                                                    |
+| Förboka                                             | [biljetter@cellotrion.se](mailto:biljetter@cellotrion.se) |
+| Swish - Betalningsbekräftelsen fungerar som biljett | [1232285567][swishQR]                                     |
 
 ![Bach med Koranyi QR-kod](/assets/images/bach-med-koranyi-qr.png){: .align-center }
 
 
 ### Fika ingår
 {: .notice--warning }
-
+  
 
 Varmt välkomna!
+
+
+[swishQR]: https://app.swish.nu/1/p/sw/?sw=1232285567&msg=Bach%20med%20Koranyi&edit=msg&src=qr
