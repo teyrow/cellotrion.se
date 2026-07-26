@@ -7,10 +7,10 @@ categories: [evenemang, kommande]
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
-  overlay_image: /assets/images/tre_celli.png
+  overlay_image: /assets/images/Sommarkväll med Cellotrion Vreta Kloster.png
 excerpt: "Sommarkväll med Cellotrion i Vreta kloster tisdagen 19 augusti kl. 19.00."
 
-image_path: assets/images/tre_celli.png
+image_path: assets/images/Sommarkväll med Cellotrion Vreta Kloster.png
 alt: "Sommarkväll med Cellotrion i Vreta kloster"
 btn_label: "Läs mer"
 ---
