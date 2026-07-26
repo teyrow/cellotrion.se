@@ -8,14 +8,14 @@ header:
   overlay_color: "#000"
   overlay_filter: "0.5"
   overlay_image: /assets/images/Sommarkväll med Cellotrion Vreta Kloster.png
-excerpt: "Sommarkväll med Cellotrion i Vreta kloster tisdagen 19 augusti kl. 19.00."
+excerpt: "Sommarkväll med Cellotrion i Vreta kloster onsdagen 19 augusti kl. 19.00."
 
 image_path: assets/images/Sommarkväll med Cellotrion Vreta Kloster.png
 alt: "Sommarkväll med Cellotrion i Vreta kloster"
 btn_label: "Läs mer"
 ---
 
-Datum: Tisdagen 19 augusti kl. 19.00.   
+Datum: Onsdagen 19 augusti kl. 19.00.   
 Inträde: 150 kr. Fika ingår.  
 Adress: [Källgårdsvägen 6, Vreta kloster](https://maps.app.goo.gl/E3WzZ2ZKS6wL8JEc7)
 
