@@ -1,5 +1,5 @@
 ---
-title: "Sommarkväll med Cellotrion i Vreta kloster"
+title: "Sommarkväll med Cellotrion"
 layout: event
 date: 2026-07-26T08:00:00+00:00
 ev_date: 2026-08-19T19:00:00+01:00
@@ -7,11 +7,11 @@ categories: [evenemang, kommande]
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
-  overlay_image: /assets/images/Sommarkväll med Cellotrion Vreta Kloster.png
-excerpt: "Sommarkväll med Cellotrion i Vreta kloster onsdagen 19 augusti kl. 19.00."
+  overlay_image: /assets/images/Sommarkväll med Cellotrion 19 aug bild.jpg
+excerpt: "Sommarkväll med Cellotrion onsdagen 19 augusti kl. 19.00."
 
-image_path: assets/images/Sommarkväll med Cellotrion Vreta Kloster.png
-alt: "Sommarkväll med Cellotrion i Vreta kloster"
+image_path: assets/images/Sommarkväll med Cellotrion 19 aug bild.jpg
+alt: "Sommarkväll med Cellotrion"
 btn_label: "Läs mer"
 ---
 
