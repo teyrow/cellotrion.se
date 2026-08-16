@@ -1,7 +1,7 @@
 ---
 permalink: /om/
 title: "Om oss"
-excerpt: "Vi har plockat fram essensen i skön musik och består av endast cellister. Upplevelsen kröner vi gärna med kaffe och gott fika. Välkommen till vår sida!"
+excerpt: "Vi har plockat fram essensen i skön musik och består av endast cellister. Upplevelsen kröner vi gärna med fika. Välkommen till vår sida!"
 header:
   image: assets/images/cellotrion.jpeg
   teaser: assets/images/cellotrion.jpeg

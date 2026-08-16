@@ -16,7 +16,7 @@
 title: Cellotrion
 email: biljetter@cellotrion.se
 description: >- # this means to ignore newlines until "baseurl:"
-  Vi har plockat fram essensen i skön musik och består av endast cellister. Upplevelsen kröner vi gärna med kaffe och gott fika. Hoppas vi ses!
+  Vi har plockat fram essensen i skön musik och består av endast cellister. Upplevelsen kröner vi gärna med fika. Hoppas vi ses!
 # twitter_username: username
 # github_username: username
 minimal_mistakes_skin: neon
@@ -59,7 +59,7 @@ plugins:
 author:
   name   : "Cellotrion"
   avatar : "/assets/images/cellortrio-photo.jpg"
-  bio    : "Vi har plockat fram essensen i skön musik och består av endast cellister. Upplevelsen kröner vi gärna med kaffe och gott fika. Hoppas vi ses!"
+  bio    : "Vi har plockat fram essensen i skön musik och består av endast cellister. Upplevelsen kröner vi gärna med fika. Hoppas vi ses!"
 
 footer:
   links:
