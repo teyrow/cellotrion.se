@@ -25,7 +25,7 @@ social:
   type: Organization # måste vara exakt "Organization" för att temat ska generera rätt schema.org-data
   name: Cellotrion
   links:
-    - "https://www.facebook.com/profile.php?id=61588980496579"
+    - "https://www.facebook.com/Cellotrion/"
     - "https://www.instagram.com/cellotrion/"
 google_site_verification: "H7Ih48IbZyS1HSLYuGRiWXRwmpWECcDVJdOOvjjgA7I" # Search Console, metod "HTML-tagg"
 minimal_mistakes_skin: neon
@@ -75,7 +75,7 @@ footer:
   links:
     - label: "Facebook"
       icon: "fab fa-fw fa-square-facebook"
-      url: "https://www.facebook.com/profile.php?id=61588980496579"
+      url: "https://www.facebook.com/Cellotrion/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://www.instagram.com/cellotrion"
