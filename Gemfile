@@ -17,3 +17,8 @@ group :jekyll_plugins do
   gem "jekyll-include-cache"
   gem "jekyll-algolia"
 end
+
+# Används av tools/responsive_images.rb för att generera bildvarianter.
+# Kräver libvips på datorn (brew install vips / apt install libvips-tools).
+# GitHub Pages läser inte den här filen, så gemet påverkar inte publiceringen.
+gem "ruby-vips"

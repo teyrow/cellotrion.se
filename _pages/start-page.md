@@ -1,13 +1,14 @@
 ---
-title: "Cellotrion"
+title: "Cellotrion – cellotrio i Linköping"
 layout: splash
-permalink: /index.html
-date: 2026-03-14T12:00:00+00:00
+permalink: /
+description: "Cellotrion är en cellotrio i Linköping som ger nära och varma konserter med klassisk musik – Bach, Chopin, Piazzolla med mera. Se kommande konserter och boka oss."
 header:
+  hero_title: "Cellotrion" # rubriken på sidan; page.title används i <title>-taggen
   overlay_color: "#000"
   overlay_filter: "0.5"
-  overlay_image: /assets/images/tre_celli.png
-excerpt: "Vi har plockat fram essensen i skön musik och består av endast cellister. Upplevelsen kröner vi gärna med kaffe och gott fika. Välkommen till vår sida!"
+  overlay_image: /assets/images/tre_celli.jpg
+excerpt: "Vi har plockat fram essensen i skön musik och består av endast cellister. Upplevelsen kröner vi gärna med fika. Välkommen till vår sida!"
 ---
 
 ## Evenemang

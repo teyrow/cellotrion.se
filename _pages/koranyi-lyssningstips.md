@@ -1,11 +1,12 @@
 ---
 permalink: /koranyi-lyssningstips/
 title: "Lyssningstips för Jakob Koranyi"
+description: "Lyssningstips inför konserten med cellisten Jakob Koranyi – radioprogram om Bachs cellosviter och samtal med Koranyi i Sveriges Radio."
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
-  overlay_image: /assets/images/Koranyi_Jakob_pc_Anna-Lena_Ahlström_6_300.jpg
-  caption: "Foto: Anna-Lena_Ahlström"
+  overlay_image: /assets/images/jakob-koranyi-foto-anna-lena-ahlstrom-6.jpg
+  caption: "Foto: Anna-Lena Ahlström"
 layout: single
 ---
 

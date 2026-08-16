@@ -1,3 +1,32 @@
+# cellotrion.se
+
+Sajten för Cellotrion, byggd med Jekyll och temat Minimal Mistakes.
+Publiceras med GitHub Pages.
+
+## Köra lokalt
+
+    bundle install
+    bundle exec jekyll serve
+
+Sajten ligger sedan på http://localhost:4000. Får du felet
+`Invalid US-ASCII character` är det skalets teckenkodning: kör
+`export LANG=en_US.UTF-8` först.
+
+## Bilder
+
+Bilder i inlägg och sidor serveras i flera storlekar och som WebP. Varianterna
+genereras i förväg eftersom GitHub Pages inte kan bearbeta bilder vid bygget.
+Kör det här efter att du lagt till eller bytt en bild:
+
+    bundle exec ruby tools/responsive_images.rb
+
+Skriptet hittar själv vilka bilder som används, lägger varianterna i
+`assets/images/resp/` och skriver `_data/responsive.yml`. Checka in resultatet.
+Det kräver libvips: `brew install vips` på macOS, `apt install libvips-tools`
+på Ubuntu.
+
+---
+
 # Minimal Mistakes remote theme starter
 
 Click [**Use this template**](https://github.com/mmistakes/mm-github-pages-starter/generate) button above for the quickest method of getting started with the [Minimal Mistakes Jekyll theme](https://github.com/mmistakes/minimal-mistakes).

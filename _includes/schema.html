@@ -1,0 +1,28 @@
+{%- comment -%}
+  Ersätter temats _includes/schema.html.
+  Läggs in av seo.html på startsidan och beskriver gruppen för sökmotorer.
+{%- endcomment -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MusicGroup",
+  "@id": {{ '/#cellotrion' | absolute_url | jsonify }},
+  "name": {{ site.social.name | default: site.title | jsonify }},
+  "url": {{ '/' | absolute_url | jsonify }},
+  "description": {{ site.description | strip_newlines | strip | jsonify }},
+  "genre": ["Klassisk musik", "Kammarmusik"],
+  "image": {{ site.og_image | absolute_url | jsonify }},
+  "logo": {{ site.og_image | absolute_url | jsonify }},
+  "email": {{ site.email | jsonify }},
+  "areaServed": {
+    "@type": "City",
+    "name": "Linköping"
+  },
+  "member": [
+    { "@type": "Person", "name": "Märta Nilsson" },
+    { "@type": "Person", "name": "Britta Hjelmfors" },
+    { "@type": "Person", "name": "Andreas Josephson" }
+  ]{% if site.social.links %},
+  "sameAs": {{ site.social.links | jsonify }}{% endif %}
+}
+</script>

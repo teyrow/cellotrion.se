@@ -1,14 +1,26 @@
 ---
 title: "Bokcafé med Cellotrion i Galleri Vreta kloster"
+permalink: /bokcafe-galleri-vreta-kloster/
+redirect_from:
+  - /evenemang/bokcafe-galleri-vreta-kloster/
 layout: event
 date: 2026-04-01T08:00:00+00:00
-ev_date: 2026-04-19T17:00:00+01:00
+ev_date: 2026-04-19T17:00:00+02:00
+ev_location:
+  title: "Galleri Vreta kloster"
+  url: https://maps.app.goo.gl/E3WzZ2ZKS6wL8JEc7
+  street: "Källgårdsvägen 6"
+  locality: "Vreta kloster"
+ev_offers:
+  - name: "Inträde"
+    price: 60
 categories: [evenemang]
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
-  overlay_image: /assets/images/tre_celli.png
+  overlay_image: /assets/images/tre_celli.jpg
 excerpt: "Bokcafé med Cellotrion i Galleri Vreta kloster söndagen 19 april kl. 17.00."
+description: "Bokcafé med musik av cellotrion Cellotrion i Galleri Vreta kloster söndag 19 april kl. 17.00. Fika ingår, inträde 60 kr."
 
 image_path: assets/images/bokcafe-galleri-vreta-kloster.jpeg
 alt: "Bokcafé med Cellotrion i Galleri Vreta kloster"
