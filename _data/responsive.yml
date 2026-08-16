@@ -1,0 +1,123 @@
+# Genererad av tools/responsive-images.py – redigera inte för hand.
+assets/images/bach-koranyi.jpg:
+  width: 1200
+  height: 1698
+  variants:
+    - w: 400
+      webp: /assets/images/resp/bach-koranyi-400.webp
+      jpg: /assets/images/resp/bach-koranyi-400.jpg
+    - w: 800
+      webp: /assets/images/resp/bach-koranyi-800.webp
+      jpg: /assets/images/resp/bach-koranyi-800.jpg
+    - w: 1200
+      webp: /assets/images/resp/bach-koranyi-1200.webp
+      jpg: /assets/images/resp/bach-koranyi-1200.jpg
+assets/images/bokcafe-galleri-vreta-kloster.jpeg:
+  width: 1400
+  height: 1980
+  variants:
+    - w: 400
+      webp: /assets/images/resp/bokcafe-galleri-vreta-kloster-400.webp
+      jpg: /assets/images/resp/bokcafe-galleri-vreta-kloster-400.jpg
+    - w: 800
+      webp: /assets/images/resp/bokcafe-galleri-vreta-kloster-800.webp
+      jpg: /assets/images/resp/bokcafe-galleri-vreta-kloster-800.jpg
+    - w: 1200
+      webp: /assets/images/resp/bokcafe-galleri-vreta-kloster-1200.webp
+      jpg: /assets/images/resp/bokcafe-galleri-vreta-kloster-1200.jpg
+    - w: 1400
+      webp: /assets/images/resp/bokcafe-galleri-vreta-kloster-1400.webp
+      jpg: /assets/images/resp/bokcafe-galleri-vreta-kloster-1400.jpg
+assets/images/cellotrion.jpeg:
+  width: 1280
+  height: 721
+  variants:
+    - w: 400
+      webp: /assets/images/resp/cellotrion-400.webp
+      jpg: /assets/images/resp/cellotrion-400.jpg
+    - w: 800
+      webp: /assets/images/resp/cellotrion-800.webp
+      jpg: /assets/images/resp/cellotrion-800.jpg
+    - w: 1200
+      webp: /assets/images/resp/cellotrion-1200.webp
+      jpg: /assets/images/resp/cellotrion-1200.jpg
+    - w: 1280
+      webp: /assets/images/resp/cellotrion-1280.webp
+      jpg: /assets/images/resp/cellotrion-1280.jpg
+assets/images/jakob-koranyi-foto-anna-lena-ahlstrom-6.jpg:
+  width: 1920
+  height: 1180
+  variants:
+    - w: 400
+      webp: /assets/images/resp/jakob-koranyi-foto-anna-lena-ahlstrom-6-400.webp
+      jpg: /assets/images/resp/jakob-koranyi-foto-anna-lena-ahlstrom-6-400.jpg
+    - w: 800
+      webp: /assets/images/resp/jakob-koranyi-foto-anna-lena-ahlstrom-6-800.webp
+      jpg: /assets/images/resp/jakob-koranyi-foto-anna-lena-ahlstrom-6-800.jpg
+    - w: 1200
+      webp: /assets/images/resp/jakob-koranyi-foto-anna-lena-ahlstrom-6-1200.webp
+      jpg: /assets/images/resp/jakob-koranyi-foto-anna-lena-ahlstrom-6-1200.jpg
+    - w: 1600
+      webp: /assets/images/resp/jakob-koranyi-foto-anna-lena-ahlstrom-6-1600.webp
+      jpg: /assets/images/resp/jakob-koranyi-foto-anna-lena-ahlstrom-6-1600.jpg
+    - w: 1920
+      webp: /assets/images/resp/jakob-koranyi-foto-anna-lena-ahlstrom-6-1920.webp
+      jpg: /assets/images/resp/jakob-koranyi-foto-anna-lena-ahlstrom-6-1920.jpg
+assets/images/jk-affisch.jpg:
+  width: 1200
+  height: 1698
+  variants:
+    - w: 400
+      webp: /assets/images/resp/jk-affisch-400.webp
+      jpg: /assets/images/resp/jk-affisch-400.jpg
+    - w: 800
+      webp: /assets/images/resp/jk-affisch-800.webp
+      jpg: /assets/images/resp/jk-affisch-800.jpg
+    - w: 1200
+      webp: /assets/images/resp/jk-affisch-1200.webp
+      jpg: /assets/images/resp/jk-affisch-1200.jpg
+assets/images/skrivmaskin.jpeg:
+  width: 1400
+  height: 934
+  variants:
+    - w: 400
+      webp: /assets/images/resp/skrivmaskin-400.webp
+      jpg: /assets/images/resp/skrivmaskin-400.jpg
+    - w: 800
+      webp: /assets/images/resp/skrivmaskin-800.webp
+      jpg: /assets/images/resp/skrivmaskin-800.jpg
+    - w: 1200
+      webp: /assets/images/resp/skrivmaskin-1200.webp
+      jpg: /assets/images/resp/skrivmaskin-1200.jpg
+    - w: 1400
+      webp: /assets/images/resp/skrivmaskin-1400.webp
+      jpg: /assets/images/resp/skrivmaskin-1400.jpg
+assets/images/sommarkvall-med-cellotrion-19-aug.jpg:
+  width: 1400
+  height: 1980
+  variants:
+    - w: 400
+      webp: /assets/images/resp/sommarkvall-med-cellotrion-19-aug-400.webp
+      jpg: /assets/images/resp/sommarkvall-med-cellotrion-19-aug-400.jpg
+    - w: 800
+      webp: /assets/images/resp/sommarkvall-med-cellotrion-19-aug-800.webp
+      jpg: /assets/images/resp/sommarkvall-med-cellotrion-19-aug-800.jpg
+    - w: 1200
+      webp: /assets/images/resp/sommarkvall-med-cellotrion-19-aug-1200.webp
+      jpg: /assets/images/resp/sommarkvall-med-cellotrion-19-aug-1200.jpg
+    - w: 1400
+      webp: /assets/images/resp/sommarkvall-med-cellotrion-19-aug-1400.webp
+      jpg: /assets/images/resp/sommarkvall-med-cellotrion-19-aug-1400.jpg
+assets/images/tre_celli.jpg:
+  width: 1024
+  height: 1360
+  variants:
+    - w: 400
+      webp: /assets/images/resp/tre_celli-400.webp
+      jpg: /assets/images/resp/tre_celli-400.jpg
+    - w: 800
+      webp: /assets/images/resp/tre_celli-800.webp
+      jpg: /assets/images/resp/tre_celli-800.jpg
+    - w: 1024
+      webp: /assets/images/resp/tre_celli-1024.webp
+      jpg: /assets/images/resp/tre_celli-1024.jpg

@@ -57,3 +57,8 @@ h6 {
 .page__content .archive__item-title {
     margin-top: 0;
 }
+/* Bilderna har width/height i markup så att webbläsaren kan reservera plats
+   innan de laddats. Temat sätter bara width: 100%, så höjden måste följa med. */
+.archive__item-teaser img {
+    height: auto;
+}

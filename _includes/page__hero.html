@@ -1,11 +1,24 @@
 {%- comment -%}
-  Kopia av temats _includes/page__hero.html (minimal-mistakes 4.28.1) med en
-  enda ändring: rubriken tar header.hero_title om den finns, annars page.title.
-  Temat använder annars page.title till både <title>-taggen och rubriken, och
-  den bästa texten för sökresultatet är inte alltid den snyggaste på sidan.
-  Vid uppgradering av temat: jämför med upstream och för över ändringen igen.
+  Kopia av temats _includes/page__hero.html (minimal-mistakes 4.28.1) med två
+  ändringar:
+    1. Rubriken tar header.hero_title om den finns, annars page.title. Temat
+       använder annars page.title till både <title>-taggen och rubriken, och
+       den bästa texten för sökresultatet är inte alltid den snyggaste på sidan.
+    2. Sidhuvudsbilden serveras som WebP när webbläsaren klarar det – som
+       bakgrund via image-set(), som vanlig bild via responsive_image.html.
+  Vid uppgradering av temat: jämför med upstream och för över ändringarna igen.
 {%- endcomment -%}
 {% assign locale = include.locale | default: site.locale %}
+{%- comment -%} WebP-variant av bakgrundsbilden, den största upp till 1600 px {%- endcomment -%}
+{% assign hero_key = page.header.overlay_image | prepend: '/' | replace: '//', '/' | remove_first: '/' %}
+{% assign hero_meta = site.data.responsive[hero_key] %}
+{% assign hero_webp = '' %}
+{% if hero_meta %}
+  {% for v in hero_meta.variants %}
+    {% if v.w <= 1600 %}{% assign hero_webp = v.webp %}{% endif %}
+  {% endfor %}
+  {% if hero_webp == '' %}{% assign hero_webp = hero_meta.variants.first.webp %}{% endif %}
+{% endif %}
 {% capture overlay_img_path %}{{ page.header.overlay_image | relative_url }}{% endcapture %}
 
 {% if page.header.overlay_filter contains "gradient" %}
@@ -27,7 +40,7 @@
 {% assign image_description = image_description | markdownify | strip_html | strip_newlines | escape_once %}
 
 <div class="page__hero{% if page.header.overlay_color or page.header.overlay_image %}--overlay{% endif %}"
-  style="{% if page.header.overlay_color %}background-color: {{ page.header.overlay_color | default: 'transparent' }};{% endif %} {% if overlay_img_path %}background-image: {% if overlay_filter %}{{ overlay_filter }}, {% endif %}url('{{ overlay_img_path }}');{% endif %}"
+  style="{% if page.header.overlay_color %}background-color: {{ page.header.overlay_color | default: 'transparent' }};{% endif %} {% if overlay_img_path %}background-image: {% if overlay_filter %}{{ overlay_filter }}, {% endif %}url('{{ overlay_img_path }}');{% if hero_webp != '' %} background-image: {% if overlay_filter %}{{ overlay_filter }}, {% endif %}image-set(url('{{ hero_webp | relative_url }}') type('image/webp'), url('{{ overlay_img_path }}') type('image/jpeg'));{% endif %}{% endif %}"
 >
   {% if page.header.overlay_color or page.header.overlay_image %}
     <div class="wrapper">
@@ -53,7 +66,7 @@
       {% endif %}
     </div>
   {% else %}
-    <img src="{{ page.header.image | relative_url }}" alt="{{ image_description }}" class="page__hero-image">
+    {% include responsive_image.html path=page.header.image alt=image_description sizes="100vw" loading="eager" class="page__hero-image" %}
   {% endif %}
   {% if page.header.caption %}
     <span class="page__hero-caption">{{ page.header.caption | markdownify | remove: "<p>" | remove: "</p>" }}</span>

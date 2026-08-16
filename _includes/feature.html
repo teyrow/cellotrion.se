@@ -11,9 +11,11 @@
           {% if p.image_path %}
             <div class="archive__item-teaser">
                 <a href="{{ p.url | relative_url }}{{ p.teaser_hash | default: '' }}" class="archive__item-link">
-                <img src="{{ p.image_path | relative_url }}"
-                    alt="{{ p.alt | default: p.title | escape_once }}"
-                    loading="lazy" decoding="async">
+                {% assign teaser_alt = p.alt | default: p.title %}
+                {% include responsive_image.html
+                    path=p.image_path
+                    alt=teaser_alt
+                    sizes="(min-width: 80em) 560px, (min-width: 48em) 45vw, 92vw" %}
                 </a>
               
               {% if p.image_caption %}

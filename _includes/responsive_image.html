@@ -1,0 +1,31 @@
+{%- comment -%}
+  Bild i flera storlekar och format. Webbläsaren väljer WebP om den kan och
+  hämtar bara den bredd som behövs.
+
+  Parametrar:
+    path    – sökväg till originalbilden, t.ex. assets/images/foo.jpg
+    alt     – alternativtext
+    sizes   – hur bred bilden visas i layouten (CSS-uttryck)
+    loading – "lazy" (standard) eller "eager" för bilder ovanför vikningen
+    class   – klassnamn på img-elementet
+
+  Varianterna genereras av tools/responsive-images.py och listas i
+  _data/responsive.yml. Saknas bilden där faller vi tillbaka på originalet.
+{%- endcomment -%}
+{%- comment -%} normalisera sökvägen: nyckeln i _data/responsive.yml saknar inledande snedstreck {%- endcomment -%}
+{%- assign key = include.path | prepend: '/' | replace: '//', '/' | remove_first: '/' -%}
+{%- assign meta = site.data.responsive[key] -%}
+{%- assign sizes = include.sizes | default: '100vw' -%}
+{%- assign loading = include.loading | default: 'lazy' -%}
+{%- if meta -%}
+<picture>
+  <source type="image/webp" sizes="{{ sizes }}" srcset="{% for v in meta.variants %}{{ v.webp | relative_url }} {{ v.w }}w{% unless forloop.last %}, {% endunless %}{% endfor %}">
+  <img src="{{ include.path | relative_url }}"
+      sizes="{{ sizes }}"
+      srcset="{% for v in meta.variants %}{{ v.jpg | relative_url }} {{ v.w }}w{% unless forloop.last %}, {% endunless %}{% endfor %}"
+      width="{{ meta.width }}" height="{{ meta.height }}"
+      alt="{{ include.alt | escape_once }}" loading="{{ loading }}" decoding="async"{% if include.class %} class="{{ include.class }}"{% endif %}>
+</picture>
+{%- else -%}
+<img src="{{ include.path | relative_url }}" alt="{{ include.alt | escape_once }}" loading="{{ loading }}" decoding="async"{% if include.class %} class="{{ include.class }}"{% endif %}>
+{%- endif -%}
