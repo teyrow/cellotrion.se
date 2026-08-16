@@ -1,5 +1,9 @@
 ---
 title: "Sommarkväll med Cellotrion"
+permalink: /sommarkvall-vreta-kloster/
+redirect_from:
+  - /evenemang/kommande/sommarkval-vreta/
+  - /evenemang/sommarkval-vreta/
 layout: event
 date: 2026-07-26T08:00:00+00:00
 ev_date: 2026-08-19T19:00:00+02:00

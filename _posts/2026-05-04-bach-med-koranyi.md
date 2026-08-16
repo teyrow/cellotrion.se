@@ -1,5 +1,8 @@
 ---
 title: "Bach med Koranyi"
+permalink: /bach-med-koranyi/
+redirect_from:
+  - /evenemang/bach-med-koranyi/
 layout: event
 date: 2026-05-04T10:00:00+00:00
 ev_date: 2026-06-17T19:00:00+02:00

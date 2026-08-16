@@ -1,5 +1,8 @@
 ---
 title: "Bokcafé med Cellotrion i Galleri Vreta kloster"
+permalink: /bokcafe-galleri-vreta-kloster/
+redirect_from:
+  - /evenemang/bokcafe-galleri-vreta-kloster/
 layout: event
 date: 2026-04-01T08:00:00+00:00
 ev_date: 2026-04-19T17:00:00+02:00

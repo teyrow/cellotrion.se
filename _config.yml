@@ -34,7 +34,9 @@ search: true
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
 # Outputting
-permalink: /:categories/:title/
+# Kategorierna ingår medvetet inte i adressen: en konsert som byter kategori
+# (t.ex. tappar "kommande") skulle annars få en ny URL och tappa sina länkar.
+permalink: /:title/
 timezone: EUROPE/STOCKHOLM # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 locale: sv-SE
 
@@ -56,6 +58,7 @@ include:
 # Plugins (previously gems:)
 plugins:
   - jekyll-paginate
+  - jekyll-redirect-from
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
