@@ -6,7 +6,7 @@ description: "Cellotrion är en cellotrio i Linköping som ger nära och varma k
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
-  overlay_image: /assets/images/tre_celli.png
+  overlay_image: /assets/images/tre_celli.jpg
 excerpt: "Vi har plockat fram essensen i skön musik och består av endast cellister. Upplevelsen kröner vi gärna med fika. Välkommen till vår sida!"
 ---
 

@@ -16,11 +16,11 @@ categories: [evenemang]
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
-  overlay_image: /assets/images/tre_celli.png
+  overlay_image: /assets/images/tre_celli.jpg
 excerpt: "Jakob Koranyi följer upp succén från i mars och spelar Bachs cellosviter nr 1, 2 och 3. Varmt välkomna till en ljuvlig stund!"
 description: "Konsert med cellisten Jakob Koranyi i Teaterns Hus, Linköping 17 juni kl. 19 – Bachs cellosviter nr 1, 2 och 3. Biljett 295 kr, ungdom 100 kr. Fika ingår."
 
-image_path: assets/images/bach-koranyi.png
+image_path: assets/images/bach-koranyi.jpg
 alt: "Affisch Bach med Koranyi"
 btn_label: "Biljetter och mer"
 teaser_hash: "#köp-biljetter"

@@ -15,7 +15,7 @@ categories: [evenemang]
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
-  overlay_image: /assets/images/tre_celli.png
+  overlay_image: /assets/images/tre_celli.jpg
 excerpt: "Bokcafé med Cellotrion i Galleri Vreta kloster söndagen 19 april kl. 17.00."
 description: "Bokcafé med musik av cellotrion Cellotrion i Galleri Vreta kloster söndag 19 april kl. 17.00. Fika ingår, inträde 60 kr."
 
