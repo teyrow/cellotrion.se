@@ -28,7 +28,7 @@ social:
     - "https://www.facebook.com/Cellotrion/"
     - "https://www.instagram.com/cellotrion/"
 minimal_mistakes_skin: neon
-search: true
+search: false # sökrutan drog in Lunr med sökindex, cirka 155 kB JavaScript
 
 # Build settings
 markdown: kramdown
