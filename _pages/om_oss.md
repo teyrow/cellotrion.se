@@ -10,7 +10,7 @@ Cellotrion bjuder på en varm och lättsam konsertupplevelse där vacker musik m
 
 Under våra konserter pratar vi gärna med publiken mellan styckena och berättar kort om musiken, instrumenten eller det som inspirerat oss. Stämningen är alltid familjär och nära – vi vill att alla ska känna sig välkomna, oavsett om man är van konsertbesökare eller nyfiken förstagångslyssnare.
 
-En viktig del av våra framträdanden är gemenskapen. Därför bjuder vi på kaffe och bullar och det blir en stund för att mötas, prata och dela upplevelsen tillsammans. 
+En viktig del av våra framträdanden är gemenskapen. Därför bjuder vi på fika och det blir en stund för att mötas, prata och dela upplevelsen tillsammans. 
 
 Följ oss gärna på [Instagram](https://www.instagram.com/cellotrion/) för att hålla dig uppdaterad om våra kommande konserter och evenemang. Vi ser fram emot att träffa dig!
 
