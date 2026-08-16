@@ -1,0 +1,66 @@
+{%- comment -%}
+  Strukturerad data (schema.org MusicEvent) för konsertsidor.
+  Kräver ev_date i sidans front matter; ev_location och ev_offers är valfria.
+  Gör att konserten kan visas som evenemang i Googles sökresultat.
+{%- endcomment -%}
+{%- if page.ev_date -%}
+{%- assign ev_image = page.header.og_image | default: page.image_path | default: page.header.overlay_image | default: site.og_image -%}
+{%- assign ev_description = page.description | default: page.excerpt | strip_html | strip_newlines | strip -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MusicEvent",
+  "name": {{ page.title | jsonify }},
+  "url": {{ page.url | absolute_url | jsonify }},
+  "startDate": {{ page.ev_date | date: "%Y-%m-%dT%H:%M:%S%:z" | jsonify }},
+  {%- if page.ev_end_date %}
+  "endDate": {{ page.ev_end_date | date: "%Y-%m-%dT%H:%M:%S%:z" | jsonify }},
+  {%- endif %}
+  "eventStatus": "https://schema.org/EventScheduled",
+  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+  "description": {{ ev_description | jsonify }},
+  "image": {{ ev_image | absolute_url | jsonify }},
+  "performer": {
+    "@type": "MusicGroup",
+    "name": {{ site.social.name | default: site.title | jsonify }},
+    "@id": {{ '/#cellotrion' | absolute_url | jsonify }}
+  },
+  "organizer": {
+    "@type": "Organization",
+    "name": {{ site.social.name | default: site.title | jsonify }},
+    "url": {{ '/' | absolute_url | jsonify }}
+  },
+  {%- if page.ev_offers %}
+  "offers": [
+    {%- for offer in page.ev_offers %}
+    {
+      "@type": "Offer",
+      "name": {{ offer.name | jsonify }},
+      "price": {{ offer.price | jsonify }},
+      "priceCurrency": "SEK",
+      "url": {{ page.url | absolute_url | jsonify }},
+      "availability": "https://schema.org/InStock",
+      "validFrom": {{ page.date | date: "%Y-%m-%dT%H:%M:%S%:z" | jsonify }}
+    }{% unless forloop.last %},{% endunless %}
+    {%- endfor %}
+  ],
+  {%- endif %}
+  "location": {
+    "@type": "Place",
+    "name": {{ page.ev_location.title | default: "Linköping" | jsonify }},
+    {%- if page.ev_location.url %}
+    "hasMap": {{ page.ev_location.url | jsonify }},
+    {%- endif %}
+    "address": {
+      "@type": "PostalAddress",
+      {%- if page.ev_location.street %}
+      "streetAddress": {{ page.ev_location.street | jsonify }},
+      {%- endif %}
+      "addressLocality": {{ page.ev_location.locality | default: "Linköping" | jsonify }},
+      "addressRegion": {{ page.ev_location.region | default: "Östergötland" | jsonify }},
+      "addressCountry": "SE"
+    }
+  }
+}
+</script>
+{%- endif -%}

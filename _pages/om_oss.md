@@ -2,6 +2,7 @@
 permalink: /om/
 title: "Om oss"
 excerpt: "Vi har plockat fram essensen i skön musik och består av endast cellister. Upplevelsen kröner vi gärna med fika. Välkommen till vår sida!"
+description: "Cellotrion är en cellotrio i Linköping – Märta Nilsson, Britta Hjelmfors och Andreas Josephson. Vi spelar allt från Bach och Chopin till Piazzolla, med fika och gemenskap."
 header:
   image: assets/images/cellotrion.jpeg
   teaser: assets/images/cellotrion.jpeg

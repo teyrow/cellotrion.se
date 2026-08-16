@@ -12,7 +12,8 @@
             <div class="archive__item-teaser">
                 <a href="{{ p.url | relative_url }}{{ p.teaser_hash | default: '' }}" class="archive__item-link">
                 <img src="{{ p.image_path | relative_url }}"
-                    alt="{% if p.alt %}{{ p.alt }}{% endif %}">
+                    alt="{{ p.alt | default: p.title | escape_once }}"
+                    loading="lazy" decoding="async">
                 </a>
               
               {% if p.image_caption %}

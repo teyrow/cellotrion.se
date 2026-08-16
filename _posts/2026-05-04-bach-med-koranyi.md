@@ -6,12 +6,19 @@ ev_date: 2026-06-17T19:00:00+02:00
 ev_location:
   title: Teaterns Hus, Linköping
   url: https://maps.app.goo.gl/acaShumWtyBYhGDJ9
+  locality: "Linköping"
+ev_offers:
+  - name: "Ordinarie"
+    price: 295
+  - name: "Ungdom upp till 25 år"
+    price: 100
 categories: [evenemang]
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
   overlay_image: /assets/images/tre_celli.png
 excerpt: "Jakob Koranyi följer upp succén från i mars och spelar Bachs cellosviter nr 1, 2 och 3. Varmt välkomna till en ljuvlig stund!"
+description: "Konsert med cellisten Jakob Koranyi i Teaterns Hus, Linköping 17 juni kl. 19 – Bachs cellosviter nr 1, 2 och 3. Biljett 295 kr, ungdom 100 kr. Fika ingår."
 
 image_path: assets/images/bach-koranyi.png
 alt: "Affisch Bach med Koranyi"

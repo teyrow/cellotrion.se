@@ -2,6 +2,7 @@
 permalink: /kontakt/
 title: "Kontakt"
 excerpt: "Har du frågor eller vill boka en konsert, kontakta oss!"
+description: "Boka Cellotrion till din konsert eller ditt evenemang i Linköping med omnejd. Här hittar du telefon, e-post och sociala medier."
 header:
   image: assets/images/skrivmaskin.jpeg
   teaser: assets/images/skrivmaskin.jpeg

@@ -16,9 +16,17 @@
 title: Cellotrion
 email: biljetter@cellotrion.se
 description: >- # this means to ignore newlines until "baseurl:"
-  Vi har plockat fram essensen i skön musik och består av endast cellister. Upplevelsen kröner vi gärna med fika. Hoppas vi ses!
-# twitter_username: username
-# github_username: username
+  Cellotrion är en cellotrio i Linköping som ger varma och nära konserter med klassisk musik – från Bach och Chopin till Piazzolla. Fika ingår.
+url: "https://cellotrion.se" # bas-URL för canonical, sitemap, og:url och RSS
+baseurl: "" # sajten ligger i roten av domänen
+repository: "teyrow/cellotrion.se"
+og_image: /assets/images/cellotrion.jpeg # bild som visas när sidan delas
+social:
+  type: Organization # måste vara exakt "Organization" för att temat ska generera rätt schema.org-data
+  name: Cellotrion
+  links:
+    - "https://www.facebook.com/profile.php?id=61588980496579"
+    - "https://www.instagram.com/cellotrion/"
 minimal_mistakes_skin: neon
 search: true
 
@@ -27,8 +35,6 @@ markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
 timezone: EUROPE/STOCKHOLM # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 locale: sv-SE
 
