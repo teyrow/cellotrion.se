@@ -7,6 +7,7 @@ redirect_from:
 layout: event
 date: 2026-07-26T08:00:00+00:00
 ev_date: 2026-08-19T19:00:00+02:00
+ev_end_date: 2026-08-19T20:00:00+02:00 # bara för strukturerad data, visas inte på sidan
 ev_location:
   title: "Galleri Vreta kloster"
   url: https://maps.app.goo.gl/E3WzZ2ZKS6wL8JEc7
