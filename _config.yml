@@ -43,17 +43,18 @@ locale: sv-SE
 include:
   - _pages
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+# Filer som inte ska publiceras. Listan ersätter Jekylls standardlista, så
+# standardposterna måste stå kvar här – annars hamnar t.ex. Gemfile på sajten.
+exclude:
+  - .bundle/
+  - .sass-cache/
+  - .jekyll-cache/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
+  - README.md
+  - tools/
 
 # Plugins (previously gems:)
 plugins:
