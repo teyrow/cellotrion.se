@@ -76,6 +76,22 @@ assets/images/jk-affisch.jpg:
   - w: 1200
     webp: "/assets/images/resp/jk-affisch-1200.webp"
     jpg: "/assets/images/resp/jk-affisch-1200.jpg"
+assets/images/musikcafe-23-aug-hero.jpg:
+  width: 1587
+  height: 878
+  variants:
+  - w: 400
+    webp: "/assets/images/resp/musikcafe-23-aug-hero-400.webp"
+    jpg: "/assets/images/resp/musikcafe-23-aug-hero-400.jpg"
+  - w: 800
+    webp: "/assets/images/resp/musikcafe-23-aug-hero-800.webp"
+    jpg: "/assets/images/resp/musikcafe-23-aug-hero-800.jpg"
+  - w: 1200
+    webp: "/assets/images/resp/musikcafe-23-aug-hero-1200.webp"
+    jpg: "/assets/images/resp/musikcafe-23-aug-hero-1200.jpg"
+  - w: 1587
+    webp: "/assets/images/resp/musikcafe-23-aug-hero-1587.webp"
+    jpg: "/assets/images/resp/musikcafe-23-aug-hero-1587.jpg"
 assets/images/musikcafe-23-aug.jpg:
   width: 1200
   height: 1698
