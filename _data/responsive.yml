@@ -76,6 +76,19 @@ assets/images/jk-affisch.jpg:
   - w: 1200
     webp: "/assets/images/resp/jk-affisch-1200.webp"
     jpg: "/assets/images/resp/jk-affisch-1200.jpg"
+assets/images/musikcafe-23-aug.jpg:
+  width: 1200
+  height: 1698
+  variants:
+  - w: 400
+    webp: "/assets/images/resp/musikcafe-23-aug-400.webp"
+    jpg: "/assets/images/resp/musikcafe-23-aug-400.jpg"
+  - w: 800
+    webp: "/assets/images/resp/musikcafe-23-aug-800.webp"
+    jpg: "/assets/images/resp/musikcafe-23-aug-800.jpg"
+  - w: 1200
+    webp: "/assets/images/resp/musikcafe-23-aug-1200.webp"
+    jpg: "/assets/images/resp/musikcafe-23-aug-1200.jpg"
 assets/images/skrivmaskin.jpeg:
   width: 1400
   height: 934

@@ -19,6 +19,8 @@ header:
   overlay_image: /assets/images/tre_celli.jpg
 excerpt: "Musikcafé med Cellotrion söndagen 23 augusti kl. 16.00. Fri entré, kaffe och kakor bjuder vi på."
 description: "Musikcafé med Cellotrion på Linjestigen 7 söndag 23 augusti kl. 16. Fri entré, kaffe och kakor ingår. Fika och skön musik under avslappnade former."
+image_path: assets/images/musikcafe-23-aug.jpg
+alt: "Affisch: Musikcafé med Cellotrion 23 augusti på Linjestigen 7"
 btn_label: "Läs mer"
 ---
 
