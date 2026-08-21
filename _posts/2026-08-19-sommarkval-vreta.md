@@ -16,7 +16,7 @@ ev_location:
 ev_offers:
   - name: "Inträde"
     price: 150
-categories: [evenemang, kommande]
+categories: [evenemang]
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
