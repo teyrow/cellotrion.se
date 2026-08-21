@@ -4,7 +4,7 @@ permalink: /musikcafe-med-cellotrion/
 layout: event
 date: 2026-08-16T10:00:00+02:00
 ev_date: 2026-08-23T16:00:00+02:00
-ev_end_date: 2026-08-23T17:00:00+02:00 # bara för strukturerad data, visas inte på sidan
+ev_end_date: 2026-08-23T18:00:00+02:00 # bara för strukturerad data, visas inte på sidan
 ev_location:
   title: "Linjestigen 7"
   street: "Linjestigen 7"
