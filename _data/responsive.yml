@@ -44,6 +44,25 @@ assets/images/cellotrion.jpeg:
   - w: 1280
     webp: "/assets/images/resp/cellotrion-1280.webp"
     jpg: "/assets/images/resp/cellotrion-1280.jpg"
+assets/images/hero-from-fb.jpg:
+  width: 1640
+  height: 924
+  variants:
+  - w: 400
+    webp: "/assets/images/resp/hero-from-fb-400.webp"
+    jpg: "/assets/images/resp/hero-from-fb-400.jpg"
+  - w: 800
+    webp: "/assets/images/resp/hero-from-fb-800.webp"
+    jpg: "/assets/images/resp/hero-from-fb-800.jpg"
+  - w: 1200
+    webp: "/assets/images/resp/hero-from-fb-1200.webp"
+    jpg: "/assets/images/resp/hero-from-fb-1200.jpg"
+  - w: 1600
+    webp: "/assets/images/resp/hero-from-fb-1600.webp"
+    jpg: "/assets/images/resp/hero-from-fb-1600.jpg"
+  - w: 1640
+    webp: "/assets/images/resp/hero-from-fb-1640.webp"
+    jpg: "/assets/images/resp/hero-from-fb-1640.jpg"
 assets/images/jakob-koranyi-foto-anna-lena-ahlstrom-6.jpg:
   width: 1920
   height: 1180
@@ -76,25 +95,9 @@ assets/images/jk-affisch.jpg:
   - w: 1200
     webp: "/assets/images/resp/jk-affisch-1200.webp"
     jpg: "/assets/images/resp/jk-affisch-1200.jpg"
-assets/images/musikcafe-23-aug-hero.jpg:
-  width: 1587
-  height: 878
-  variants:
-  - w: 400
-    webp: "/assets/images/resp/musikcafe-23-aug-hero-400.webp"
-    jpg: "/assets/images/resp/musikcafe-23-aug-hero-400.jpg"
-  - w: 800
-    webp: "/assets/images/resp/musikcafe-23-aug-hero-800.webp"
-    jpg: "/assets/images/resp/musikcafe-23-aug-hero-800.jpg"
-  - w: 1200
-    webp: "/assets/images/resp/musikcafe-23-aug-hero-1200.webp"
-    jpg: "/assets/images/resp/musikcafe-23-aug-hero-1200.jpg"
-  - w: 1587
-    webp: "/assets/images/resp/musikcafe-23-aug-hero-1587.webp"
-    jpg: "/assets/images/resp/musikcafe-23-aug-hero-1587.jpg"
 assets/images/musikcafe-23-aug.jpg:
-  width: 1200
-  height: 1698
+  width: 1586
+  height: 2244
   variants:
   - w: 400
     webp: "/assets/images/resp/musikcafe-23-aug-400.webp"
@@ -105,6 +108,9 @@ assets/images/musikcafe-23-aug.jpg:
   - w: 1200
     webp: "/assets/images/resp/musikcafe-23-aug-1200.webp"
     jpg: "/assets/images/resp/musikcafe-23-aug-1200.jpg"
+  - w: 1586
+    webp: "/assets/images/resp/musikcafe-23-aug-1586.webp"
+    jpg: "/assets/images/resp/musikcafe-23-aug-1586.jpg"
 assets/images/skrivmaskin.jpeg:
   width: 1400
   height: 934

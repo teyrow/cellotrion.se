@@ -16,7 +16,7 @@ categories: [evenemang]
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
-  overlay_image: /assets/images/musikcafe-23-aug-hero.jpg # fotot ur affischens nederkant
+  overlay_image: /assets/images/hero-from-fb.jpg
 excerpt: "Musikcafé med Cellotrion söndagen 23 augusti kl. 16.00. Fri entré, kaffe och kakor bjuder vi på."
 description: "Musikcafé med Cellotrion på Linjestigen 7 söndag 23 augusti kl. 16. Fri entré, kaffe och kakor ingår. Fika och skön musik under avslappnade former."
 image_path: assets/images/musikcafe-23-aug.jpg
