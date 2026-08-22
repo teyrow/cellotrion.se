@@ -32,7 +32,7 @@ search: true # kostar cirka 32 kB JavaScript för Lunr och sökindexet
 
 # Build settings
 markdown: kramdown
-remote_theme: mmistakes/minimal-mistakes
+remote_theme: mmistakes/minimal-mistakes@4.28.1
 # Outputting
 # Kategorierna ingår medvetet inte i adressen: en konsert som byter kategori
 # (t.ex. tappar "kommande") skulle annars få en ny URL och tappa sina länkar.
