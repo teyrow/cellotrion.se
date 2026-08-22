@@ -1,0 +1,41 @@
+---
+permalink: /kommande.ics
+sitemap: false
+---
+{%- assign nu = site.time | date: '%s' | plus: 0 -%}
+{%- assign daterade = site.categories.evenemang | where_exp: "p", "p.ev_date" | sort: 'ev_date' -%}
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Cellotrion//cellotrion.se//SV
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Cellotrion
+{% for post in daterade -%}
+{%- assign slut_jmf = post.ev_end_date | default: post.ev_date | date: '%s' | plus: 0 -%}
+{%- if slut_jmf > nu -%}
+{%- comment -%} Tiderna skrivs i UTC. date_to_xmlschema behåller tidsobjektets
+egen zon, som är UTC, medan date-filtret hade räknat om till svensk tid och
+gett fel stämpel tillsammans med Z. {%- endcomment -%}
+{%- assign start = post.ev_date | date_to_xmlschema | replace: '-', '' | replace: ':', '' | split: '+' | first -%}
+{%- assign slut_dt = post.ev_end_date | default: post.ev_date | date_to_xmlschema | replace: '-', '' | replace: ':', '' | split: '+' | first -%}
+{%- assign plats = post.ev_location.title -%}
+{%- if post.ev_location.locality and post.ev_location.locality != post.ev_location.title -%}
+  {%- assign plats = plats | append: ', ' | append: post.ev_location.locality -%}
+{%- endif -%}
+{%- assign beskrivning = post.description | default: post.excerpt | strip_html | strip_newlines | strip -%}
+{%- assign beskrivning = beskrivning | replace: '\', '\\' | replace: ';', '\;' | replace: ',', '\,' -%}
+{%- assign rubrik = post.title | replace: '\', '\\' | replace: ';', '\;' | replace: ',', '\,' -%}
+{%- assign plats = plats | replace: '\', '\\' | replace: ';', '\;' | replace: ',', '\,' -%}
+BEGIN:VEVENT
+UID:{{ post.url | absolute_url }}
+DTSTAMP:{{ site.time | date_to_xmlschema | replace: '-', '' | replace: ':', '' | split: '+' | first }}Z
+DTSTART:{{ start }}Z
+DTEND:{{ slut_dt }}Z
+SUMMARY:{{ rubrik }}
+DESCRIPTION:{{ beskrivning }}
+LOCATION:{{ plats }}
+URL:{{ post.url | absolute_url }}
+END:VEVENT
+{% endif -%}
+{%- endfor -%}
+END:VCALENDAR

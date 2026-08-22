@@ -1,0 +1,2 @@
+# Kalenderfiler ska behålla CRLF, annars bryter de mot RFC 5545.
+*.ics -text
