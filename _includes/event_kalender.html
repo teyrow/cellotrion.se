@@ -1,0 +1,11 @@
+{%- comment -%}
+  Nedladdningsknapp för kalenderfilen, men bara på konserter som inte varit.
+  Samma jämförelse som startsidan gör: sluttiden om den finns, annars starten.
+{%- endcomment -%}
+{%- if page.ev_date -%}
+  {%- assign nu = site.time | date: '%s' | plus: 0 -%}
+  {%- assign slut = page.ev_end_date | default: page.ev_date | date: '%s' | plus: 0 -%}
+  {%- if slut > nu -%}
+<p><a href="{{ '/kommande.ics' | relative_url }}" class="btn btn--primary" download>Lägg till i kalendern</a></p>
+  {%- endif -%}
+{%- endif -%}
