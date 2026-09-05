@@ -45,7 +45,23 @@ ner i filen syns aldrig.
 ## Publicering
 
 Push till `main` startar `pages-build-deployment` hos GitHub Pages, klart på
-ungefär en minut. Ingen egen workflow-fil finns i repot.
+ungefär en minut.
+
+## Temaversion
+
+`remote_theme` är pinnad i `_config.yml`. Utan version hämtas temats master
+vid varje bygge, och en ändring där kan slå sönder våra kopierade includes
+utan att någon rört repot.
+
+`.github/workflows/bevaka-temaversion.yml` körs vid varje push till `main` och
+jämför den pinnade versionen med senaste release hos upstream. Finns en nyare
+öppnas ett ärende med vad som behöver ses över. Är versionen aktuell syns bara
+en rad i körningens sammanfattning, inget ärende och ingen notis. Workflowet
+publicerar ingenting.
+
+Tre filer är kopior av temats och måste jämföras med upstream vid uppgradering:
+`_includes/head.html`, `_includes/page__hero.html` och `_includes/schema.html`.
+Kommentaren högst upp i varje fil förklarar vad som är ändrat.
 
 ## Lokal miljö
 

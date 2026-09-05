@@ -1,0 +1,81 @@
+# Jämför den pinnade temaversionen i _config.yml med senaste release hos
+# mmistakes/minimal-mistakes. Hittas en nyare version öppnas ett ärende med
+# vad som behöver ses över. Är versionen aktuell händer ingenting utom en rad
+# i körningens sammanfattning.
+#
+# Workflowet publicerar ingenting och rör inte sajten. Pages bygger som förut.
+name: Bevaka temaversion
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: # går att köra för hand från fliken Actions
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  jamfor:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Jämför pinnad version med upstream
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TEMA: mmistakes/minimal-mistakes
+        run: |
+          set -euo pipefail
+
+          rad=$(grep -m1 '^remote_theme:' _config.yml || true)
+          pinnad=$(printf '%s' "$rad" | sed -n 's|^remote_theme: *[^@]*@\([^ #]*\).*|\1|p')
+
+          if [ -z "$pinnad" ]; then
+            echo "::warning::remote_theme saknar version, temat följer master vid varje bygge"
+            echo "⚠️ \`remote_theme\` saknar version – temat följer master." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+
+          senaste=$(gh api "repos/$TEMA/releases/latest" --jq .tag_name)
+
+          if [ "$pinnad" = "$senaste" ]; then
+            echo "✅ Temat är pinnat till $pinnad, vilket är senaste versionen." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+
+          echo "::warning::Temat är pinnat till $pinnad men $senaste finns"
+          echo "🔔 Temat är pinnat till **$pinnad**, senaste versionen är **$senaste**." >> "$GITHUB_STEP_SUMMARY"
+
+          titel="Temauppdatering: minimal-mistakes $senaste finns"
+          if [ "$(gh issue list --state open --search "\"$titel\" in:title" --json number --jq 'length')" != "0" ]; then
+            echo "Ärende finns redan, skapar inget nytt." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+
+          gh issue create --title "$titel" --body "$(cat <<TEXT
+          Sajten är pinnad till \`$pinnad\` i \`_config.yml\`. Upstream har släppt \`$senaste\`.
+
+          Ändringar mellan versionerna:
+          https://github.com/$TEMA/compare/$pinnad...$senaste
+
+          ## Att gå igenom vid uppgradering
+
+          Tre filer är kopior av temats och följer inte med automatiskt. Jämför
+          var och en med upstream och för över det som ändrats:
+
+          - \`_includes/head.html\` – Font Awesome-raderna är borttagna
+          - \`_includes/page__hero.html\` – \`header.hero_title\` och WebP i sidhuvudet
+          - \`_includes/schema.html\` – egen MusicGroup-data i stället för temats
+
+          ## Efter uppgraderingen
+
+          1. \`bundle exec jekyll build\` och jämför utfallet med föregående bygge
+          2. Kontrollera startsidan, en konsertsida och \`/kontakt/\` i webbläsare
+          3. Kör Lighthouse och se att inget rasat
+
+          Ärendet är skapat automatiskt av \`.github/workflows/bevaka-temaversion.yml\`.
+          TEXT
+          )"
+
+          echo "Ärende skapat." >> "$GITHUB_STEP_SUMMARY"
