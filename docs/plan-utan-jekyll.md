@@ -2,6 +2,11 @@
 
 Underlag för ett beslut, inte ett beslut. Skrivet augusti 2026.
 
+> **Utfall, september 2026:** spår A valdes. Temat är borttaget och sajten har
+> egna layouter, egen stilmall och egen sökfunktion, medan Jekyll är kvar.
+> Arbetet ligger på grenen `claude/eget-tema`. Avsnittet om att pinna temat är
+> därmed överspelat – det finns inget tema kvar att pinna.
+
 ## Först: sajten är redan statisk
 
 Jekyll kör aldrig hos besökaren. Det som ligger på cellotrion.se är färdiga
