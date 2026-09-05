@@ -27,12 +27,11 @@ social:
   links:
     - "https://www.facebook.com/Cellotrion/"
     - "https://www.instagram.com/cellotrion/"
-minimal_mistakes_skin: neon
 search: true # kostar cirka 32 kB JavaScript för Lunr och sökindexet
 
 # Build settings
 markdown: kramdown
-remote_theme: mmistakes/minimal-mistakes
+# Inget tema: layouter och stilmall ligger i repot.
 # Outputting
 # Kategorierna ingår medvetet inte i adressen: en konsert som byter kategori
 # (t.ex. tappar "kommande") skulle annars få en ny URL och tappa sina länkar.
@@ -59,13 +58,9 @@ exclude:
 
 # Plugins (previously gems:)
 plugins:
-  - jekyll-paginate
   - jekyll-redirect-from
   - jekyll-sitemap
-  - jekyll-gist
   - jekyll-feed
-  - jemoji
-  - jekyll-include-cache
 
 author:
   name   : "Cellotrion"

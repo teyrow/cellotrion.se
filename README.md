@@ -1,7 +1,8 @@
 # cellotrion.se
 
-Sajten för Cellotrion, byggd med Jekyll och temat Minimal Mistakes.
-Publiceras med GitHub Pages.
+Sajten för Cellotrion, byggd med Jekyll. Layouter, stilmall och den lilla
+sökfunktionen ligger i repot – inget tema hämtas utifrån. Publiceras med
+GitHub Pages.
 
 ## Köra lokalt
 

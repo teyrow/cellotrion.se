@@ -1,0 +1,6 @@
+---
+title: "Arkivsidor"
+permalink: /tags/
+redirect_to: /
+sitemap: false
+---

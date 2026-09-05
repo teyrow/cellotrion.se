@@ -1,50 +1,22 @@
----
-# Only the main Sass file needs front matter (the dashes are enough)
-search: false
----
+/* Cellotrion – sajtens hela stilmall.
+   Ren CSS utan Sass-steg, så moderna finesser som CSS-variabler fungerar.
+   Färger och mått är hämtade ur den tidigare temabaserade designen. */
 
-@charset "utf-8";
-
-$primary-color: {{ site.primary_color | default: "#d1bf73" }};
-$background-color: {{ site.background_color | default: "#383838" }};
-
-h1, h2, h3, h4, h5, h6 {
-  color: {{ site.headline_color | default: "#d1bf73" }};
+:root {
+  --bakgrund: #383838;
+  --text: #fff6fb;
+  --guld: #d1bf73;
+  --mork: #15130c;
+  --kant: #606060;
+  --kant-svag: #484848;
+  --notis: #483f33;
+  --radie: 4px;
+  --rubrikfont: "Averia Serif Libre", Georgia, serif;
+  --brodfont: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI",
+    "Helvetica Neue", Arial, sans-serif;
+  --spalt: 1200px;
 }
 
-// $default-sans-serif: "Playfair Display, serif";
-$header-font-family: "Averia Serif Libre", serif;
-$sans-serif-narrow: "Averia Serif Libre", serif;
-// $global-font-family: "Playfair Display, serif";
-
-
-/* type scale */
-$type-size-1: 2.441em !default; // ~39.056px
-$type-size-2: 1.953em !default; // ~31.248px
-$type-size-3: 1.563em !default; // ~25.008px
-$type-size-4: 1.25em !default; // ~20px
-$type-size-5: 1em !default; // ~16px
-$type-size-6: 0.75em !default; // ~12px
-$type-size-7: 0.6875em !default; // ~11px
-$type-size-8: 0.625em !default; // ~10px
-
-/* headline scale */
-$h-size-1: 2.563em !default; // ~25.008px
-$h-size-2: 2.25em !default; // ~20px
-$h-size-3: 1.125em !default; // ~18px
-$h-size-4: 1.0625em !default; // ~17px
-$h-size-5: 1.03125em !default; // ~16.5px
-$h-size-6: 1em !default; // ~16px
-
-
-
-@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
-
-@import "minimal-mistakes"; // main partials
-
-/* Rubriktypsnittet ligger lokalt i stället för hos Google Fonts: en
-   render-blockerande begäran och två extra anslutningar mindre. Bara de två
-   varianter sajten faktiskt använder finns med (400 och 700, latin). */
 @font-face {
   font-family: "Averia Serif Libre";
   font-style: normal;
@@ -60,6 +32,360 @@ $h-size-6: 1em !default; // ~16px
   font-display: swap;
   src: url("/assets/fonts/averia-serif-libre-700.woff2") format("woff2");
 }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--bakgrund);
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--text);
+  font-family: var(--brodfont);
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 2em 0 0.5em;
+  color: var(--guld);
+  font-family: var(--rubrikfont);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h1 { font-size: 2.6rem; line-height: 1.05; margin-top: 0; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.4rem; }
+h4 { font-size: 1.15rem; }
+
+p { margin: 0 0 1.3em; }
+
+a {
+  color: var(--guld);
+  text-decoration: underline;
+}
+
+a:hover { text-decoration: none; }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--kant-svag);
+  margin: 2em 0;
+}
+
+cite {
+  display: block;
+  margin-top: 2em;
+  font-size: 0.9rem;
+}
+
+/* Layout ------------------------------------------------------------- */
+
+.omslutning {
+  max-width: var(--spalt);
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+.innehall {
+  padding: 2.5rem 0 4rem;
+}
+
+/* Läsbar textspalt på vanliga sidor. Konsertsidor och startsidan
+   använder hela bredden eftersom de har bilder bredvid texten. */
+.innehall--smal .omslutning {
+  max-width: 700px;
+}
+
+/* Sidhuvud ----------------------------------------------------------- */
+
+.sidhuvud {
+  border-bottom: 1px solid var(--kant);
+}
+
+.sidhuvud .omslutning {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 89px;
+}
+
+.sidnamn {
+  color: var(--text);
+  font-family: var(--rubrikfont);
+  font-weight: 700;
+  font-size: 1.25rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.meny {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.meny a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.meny a:hover { color: var(--guld); }
+
+.sok-knapp {
+  border: 0;
+  background: none;
+  padding: 0;
+  color: var(--guld);
+  font-size: 1.25rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+/* Sidhuvudsbild ------------------------------------------------------ */
+
+.hjalte {
+  position: relative;
+  background-color: #000;
+  background-size: cover;
+  background-position: center;
+}
+
+.hjalte--text {
+  padding: 4rem 0;
+}
+
+.hjalte--text .omslutning > * {
+  color: #fff;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hjalte h1 {
+  color: #fff;
+  margin: 0 0 0.5em;
+  font-size: 2.5rem;
+}
+
+.hjalte__ingress {
+  margin: 0;
+  max-width: 40em;
+  font-size: 1.35rem;
+}
+
+.hjalte__bild {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hjalte__bildtext {
+  position: absolute;
+  right: 0.5rem;
+  bottom: 0.25rem;
+  color: #fff;
+  font-size: 0.7rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+/* Evenemang ---------------------------------------------------------- */
+
+.evenemang {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  gap: 2rem;
+  align-items: start;
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--kant-svag);
+}
+
+.evenemang:last-child { border-bottom: 0; }
+
+.evenemang__bild img {
+  width: 100%;
+  border-radius: var(--radie);
+}
+
+.evenemang__titel {
+  margin: 0 0 0.5em;
+  font-size: 2.2rem;
+}
+
+.evenemang__titel a { text-decoration: none; }
+
+.evenemang__bildtext {
+  display: block;
+  margin-top: 0.4em;
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+/* Knappar ------------------------------------------------------------ */
+
+/* .btn--primary finns i inläggens markdown sedan temats tid och behandlas
+   som en vanlig knapp. */
+.btn,
+.btn--primary,
+.knapp {
+  display: inline-block;
+  margin: 0.25em 0.25em 0.25em 0;
+  padding: 0.5em 1em;
+  border: 0;
+  border-radius: var(--radie);
+  background: var(--guld);
+  color: #262626;
+  font-family: var(--brodfont);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn--primary:hover,
+.knapp:hover { background: #e0d192; }
+
+.btn--large { font-size: 1rem; }
+
+/* Tabeller, notiser, media ------------------------------------------- */
+
+table {
+  width: 100%;
+  margin-bottom: 1.5em;
+  border-collapse: collapse;
+  font-size: 0.8rem;
+}
+
+td,
+th {
+  padding: 0.4em 0.6em;
+  border-bottom: 1px solid var(--kant-svag);
+  text-align: left;
+  vertical-align: top;
+}
+
+th { font-weight: 700; }
+
+.notice--warning,
+.notice,
+.notice--primary,
+.notice--info,
+.notice--success,
+.notice--danger {
+  margin: 1.5em 0;
+  padding: 0.8em 1em;
+  border-radius: var(--radie);
+  background: var(--notis);
+  font-size: 0.8rem;
+}
+
+.notice--warning h3,
+.notice h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+iframe {
+  max-width: 100%;
+  border: 0;
+}
+
+.align-center {
+  display: block;
+  margin: 1.5em auto;
+}
+
+/* Sök ---------------------------------------------------------------- */
+
+.sok {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--kant);
+}
+
+.sok[hidden] { display: none; }
+
+.sok input {
+  width: 100%;
+  padding: 0.5em 0;
+  border: 0;
+  border-bottom: 1px solid var(--kant);
+  background: none;
+  color: var(--text);
+  font-family: var(--rubrikfont);
+  font-size: 1.6rem;
+}
+
+.sok input:focus { outline: 0; border-bottom-color: var(--guld); }
+
+.sok__traffar {
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sok__traffar li { margin-bottom: 0.75rem; }
+
+.sok__traffar a {
+  font-family: var(--rubrikfont);
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+.sok__traffar p {
+  margin: 0.15em 0 0;
+  font-size: 0.85rem;
+  opacity: 0.85;
+}
+
+/* Sidfot ------------------------------------------------------------- */
+
+.sidfot {
+  padding: 1.5rem 0;
+  background: var(--mork);
+  font-size: 0.75rem;
+}
+
+.sidfot ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin: 0 0 0.75rem;
+  padding: 0;
+  list-style: none;
+}
+
+.sidfot a,
+.sidfot strong {
+  color: var(--text);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: var(--rubrikfont);
+}
+
+.sidfot a:hover { color: var(--guld); }
+
+.sidfot__copyright { margin: 0; }
 
 /* Ikoner utan Font Awesome. Temat hämtar annars hela biblioteket från en extern
    CDN för de sju ikoner sajten använder. Här ritas de i stället av en inbäddad
@@ -142,4 +468,48 @@ h6 {
    innan de laddats. Temat sätter bara width: 100%, så höjden måste följa med. */
 .archive__item-teaser img {
     height: auto;
+}
+
+/* Hoppa-till-innehåll och skärmläsartext ------------------------------ */
+
+.sr-only,
+.screen-reader-text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.hoppa-till {
+  position: absolute;
+  left: -9999px;
+  z-index: 10;
+  padding: 0.5em 1em;
+  background: var(--guld);
+  color: #262626;
+}
+
+.hoppa-till:focus {
+  left: 0;
+}
+
+/* Mindre skärmar ----------------------------------------------------- */
+
+@media (max-width: 48em) {
+  body { font-size: 1.05rem; }
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.6rem; }
+  .hjalte h1 { font-size: 1.9rem; }
+  .hjalte__ingress { font-size: 1.1rem; }
+  .hjalte--text { padding: 2.5rem 0; }
+  .evenemang {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+  }
+  .evenemang__titel { font-size: 1.7rem; }
+  .meny { gap: 1rem; }
 }

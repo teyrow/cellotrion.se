@@ -1,0 +1,30 @@
+<header class="sidhuvud">
+  <div class="omslutning">
+    <a class="sidnamn" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    <nav aria-label="Huvudmeny">
+      <ul class="meny">
+        {%- for lank in site.data.navigation.main %}
+        <li><a href="{{ lank.url | relative_url }}">{{ lank.title }}</a></li>
+        {%- endfor %}
+        {%- if site.search %}
+        <li>
+          <button type="button" class="sok-knapp" id="sok-knapp" aria-expanded="false" aria-controls="sok">
+            <i class="fas fa-search" aria-hidden="true"></i>
+            <span class="sr-only">Sök</span>
+          </button>
+        </li>
+        {%- endif %}
+      </ul>
+    </nav>
+  </div>
+</header>
+
+{%- if site.search %}
+<div class="sok" id="sok" hidden>
+  <div class="omslutning">
+    <label class="sr-only" for="sok-falt">Sök på sajten</label>
+    <input type="search" id="sok-falt" placeholder="Sök…" autocomplete="off">
+    <ul class="sok__traffar" id="sok-traffar"></ul>
+  </div>
+</div>
+{%- endif %}

@@ -26,21 +26,37 @@ Bredderna är `400, 800, 1200, 1600` plus källbildens egen bredd.
 
 ## Sidhuvudsbilder
 
-`_includes/page__hero.html` är en lokal kopia av temats include – jämför med
-upstream vid temauppgradering, kommentaren högst upp i filen förklarar vad som
-är ändrat.
+`_includes/hjalte.html` ritar sidhuvudet. `header.overlay_image` ger en
+bakgrundsbild med rubrik och ingress ovanpå, `header.image` en vanlig bild i
+full bredd utan text.
 
-Formatet på en hero-bild styrs av två saker som inte syns i front matter:
+Formatet på en overlay-bild styrs av två saker som inte syns i front matter:
 
 - Includen väljer **största varianten ≤ 1600 px**. Bredare källbilder ger en
   variant som aldrig används som sidhuvud.
-- Temats `.page__hero--overlay` har `background-size: cover` och
-  `background-position: center`, och **ingen fast höjd** – rutan blir så hög som
-  rubrik, ingress och metarad kräver, ungefär 300–450 px.
+- `.hjalte` har `background-size: cover` och `background-position: center`, och
+  **ingen fast höjd** – rutan blir så hög som rubrik och ingress kräver,
+  ungefär 300–350 px.
 
 Alltså: **1600 px bred, ungefär 2:1, motivet vertikalt centrerat.** På breda
 skärmar beskärs bilden hårt i höjdled, och det som ligger högst upp och längst
 ner i filen syns aldrig.
+
+## Layouter och stilmall
+
+Sajten använder **inget tema**. Allt ligger i repot:
+
+- `_layouts/default.html` är skalet. `single` är en vanlig sida, `splash` en
+  sida i full bredd och `event` en konsert.
+- `assets/css/main.css` är **ren CSS utan Sass-steg**, så CSS-variabler och
+  annat modernt fungerar. Färger och mått ligger som variabler överst.
+- Ikonerna ritas av inbäddad SVG som mask i samma fil, sju stycken. Lägger du
+  till en ny ikon i `_config.yml` måste regeln läggas till där också.
+- Sökningen är `assets/js/sok.js` plus `sok.json`, som Jekyll bygger av sidor
+  och inlägg. Med ett tiotal sidor räcker delsträngsmatchning – inget sökindex
+  behövs. Det är sajtens enda JavaScript.
+- `_includes/seo.html` sätter titel, beskrivning, canonical och delningsdata.
+  `schema.html` är gruppens data på startsidan, `event_schema.html` konsertens.
 
 ## Publicering
 

@@ -1,0 +1,15 @@
+---
+permalink: /sok.json
+sitemap: false
+---
+{%- assign sidor = site.pages | where_exp: "s", "s.title" -%}
+[
+{%- for p in site.posts -%}
+{"titel": {{ p.title | jsonify }}, "url": {{ p.url | relative_url | jsonify }}, "text": {{ p.content | strip_html | strip_newlines | truncate: 600 | jsonify }}},
+{%- endfor -%}
+{%- for p in sidor -%}
+{%- unless p.sitemap == false or p.url contains '.json' -%}
+{"titel": {{ p.title | jsonify }}, "url": {{ p.url | relative_url | jsonify }}, "text": {{ p.content | strip_html | strip_newlines | truncate: 600 | jsonify }}}{%- unless forloop.last -%},{%- endunless -%}
+{%- endunless -%}
+{%- endfor -%}
+]

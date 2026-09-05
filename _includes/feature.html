@@ -1,46 +1,40 @@
-{% if include.post  %}
-  {% assign p = include.post %}
-{% else %}
-  {% assign p = page %}
-{% endif %}
+{%- comment -%}
+  Ett evenemang. Med parametern post visas det som kort i en lista, annars
+  som innehållet på konsertens egen sida.
+{%- endcomment -%}
+{%- if include.post -%}
+  {%- assign p = include.post -%}
+{%- else -%}
+  {%- assign p = page -%}
+{%- endif -%}
 
-<section class="page__content" itemprop="text">
-  <div class="feature__wrapper">
-      <div class="feature__item--left">
-        <div class="archive__item">
-          {% if p.image_path %}
-            <div class="archive__item-teaser">
-                <a href="{{ p.url | relative_url }}{{ p.teaser_hash | default: '' }}" class="archive__item-link">
-                {% assign teaser_alt = p.alt | default: p.title %}
-                {% include responsive_image.html
-                    path=p.image_path
-                    alt=teaser_alt
-                    sizes="(min-width: 80em) 560px, (min-width: 48em) 45vw, 92vw" %}
-                </a>
-              
-              {% if p.image_caption %}
-                <span class="archive__item-caption">{{ p.image_caption | markdownify | remove: "<p>" | remove: "</p>" }}</span>
-              {% endif %}
-            </div>
-          {% endif %}
+<section class="evenemang">
+  <div class="evenemang__bild">
+    {%- if p.image_path -%}
+      {%- assign bildtext = p.alt | default: p.title -%}
+      {%- if include.post -%}
+      <a href="{{ p.url | relative_url }}{{ p.teaser_hash | default: '' }}">
+        {% include responsive_image.html path=p.image_path alt=bildtext sizes="(min-width: 80em) 560px, (min-width: 48em) 45vw, 92vw" %}
+      </a>
+      {%- else -%}
+        {% include responsive_image.html path=p.image_path alt=bildtext sizes="(min-width: 80em) 560px, (min-width: 48em) 45vw, 92vw" %}
+      {%- endif -%}
+      {%- if p.image_caption %}
+      <span class="evenemang__bildtext">{{ p.image_caption | markdownify | remove: "<p>" | remove: "</p>" }}</span>
+      {%- endif -%}
+    {%- endif -%}
+  </div>
 
-          <div class="archive__item-body">
-            {% if p.title %}
-              <h2 class="archive__item-title">{{ p.title }}</h2>
-            {% endif %}
-            
-            <div class="archive__item-excerpt">
-              {% if include.post %}
-                {{ p.excerpt | markdownify }}
-                <hr>
-                <p><a href="{{ p.url | relative_url }}" class="btn btn--primary">{{ p.btn_label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a></p>
-              {% else %}
-                {% include event.html post=p %}
-                {{ content }}
-              {% endif %}
-            </div>
-          </div>
-        </div>
-      </div>
+  <div class="evenemang__text">
+    {%- if include.post %}
+    <h2 class="evenemang__titel"><a href="{{ p.url | relative_url }}">{{ p.title }}</a></h2>
+    {{ p.excerpt | markdownify }}
+    <hr>
+    {%- comment -%} aria-label: "Läs mer" ensamt säger inget för den som lyssnar sig igenom sidan {%- endcomment -%}
+    <p><a href="{{ p.url | relative_url }}{{ p.teaser_hash | default: '' }}" class="btn" aria-label="{{ p.btn_label | default: 'Läs mer' }} om {{ p.title | escape_once }}">{{ p.btn_label | default: "Läs mer" }}</a></p>
+    {%- else %}
+    <h2 class="evenemang__titel">{{ p.title }}</h2>
+    {{ content }}
+    {%- endif %}
   </div>
 </section>

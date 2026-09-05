@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+{% include hjalte.html %}
+
+<article class="innehall innehall--smal">
+  <div class="omslutning">
+    {%- unless page.header.overlay_image %}
+    <h1 id="sidtitel">{{ page.title }}</h1>
+    {%- endunless %}
+    {{ content }}
+  </div>
+</article>

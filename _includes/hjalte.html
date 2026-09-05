@@ -1,0 +1,43 @@
+{%- comment -%}
+  Sidhuvudsbild. Två varianter:
+  - header.overlay_image ger en bakgrundsbild med rubrik och ingress ovanpå
+  - header.image ger en vanlig bild i full bredd, utan text
+
+  WebP används när webbläsaren klarar det. För bakgrunden går det via
+  image-set(), eftersom srcset inte finns för CSS-bakgrunder, och där väljs
+  största varianten upp till 1600 px.
+{%- endcomment -%}
+{%- assign rubrik = page.header.hero_title | default: page.title | default: site.title -%}
+
+{%- if page.header.overlay_image -%}
+  {%- assign nyckel = page.header.overlay_image | prepend: '/' | replace: '//', '/' | remove_first: '/' -%}
+  {%- assign data = site.data.responsive[nyckel] -%}
+  {%- assign webp = '' -%}
+  {%- if data -%}
+    {%- for v in data.variants -%}
+      {%- if v.w <= 1600 %}{% assign webp = v.webp %}{% endif -%}
+    {%- endfor -%}
+    {%- if webp == '' %}{% assign webp = data.variants.first.webp %}{% endif -%}
+  {%- endif -%}
+  {%- capture skugga -%}linear-gradient(rgba(0, 0, 0, {{ page.header.overlay_filter | default: 0.5 }}), rgba(0, 0, 0, {{ page.header.overlay_filter | default: 0.5 }})){%- endcapture -%}
+<div class="hjalte hjalte--text" style="background-image: {{ skugga }}, url('{{ page.header.overlay_image | relative_url }}');{% if webp != '' %} background-image: {{ skugga }}, image-set(url('{{ webp | relative_url }}') type('image/webp'), url('{{ page.header.overlay_image | relative_url }}') type('image/jpeg'));{% endif %}">
+  <div class="omslutning">
+    <h1 id="sidtitel">{{ rubrik | markdownify | remove: "<p>" | remove: "</p>" }}</h1>
+    {%- if page.excerpt and page.header.show_overlay_excerpt != false %}
+    <p class="hjalte__ingress">{{ page.excerpt | markdownify | strip_html | strip_newlines | strip }}</p>
+    {%- endif %}
+  </div>
+  {%- if page.header.caption %}
+  <span class="hjalte__bildtext">{{ page.header.caption | markdownify | remove: "<p>" | remove: "</p>" }}</span>
+  {%- endif %}
+</div>
+
+{%- elsif page.header.image -%}
+{%- assign bildtext = page.header.image_description | default: page.title -%}
+<div class="hjalte">
+  {% include responsive_image.html path=page.header.image alt=bildtext sizes="100vw" loading="eager" class="hjalte__bild" %}
+  {%- if page.header.caption %}
+  <span class="hjalte__bildtext">{{ page.header.caption | markdownify | remove: "<p>" | remove: "</p>" }}</span>
+  {%- endif %}
+</div>
+{%- endif -%}

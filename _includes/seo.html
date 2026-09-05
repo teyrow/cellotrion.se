@@ -1,0 +1,36 @@
+{%- comment -%}
+  Titel, beskrivning, canonical och delningsdata. Ersätter temats seo.html.
+  page.description går före page.excerpt, som går före sajtens beskrivning.
+{%- endcomment -%}
+{%- assign sidtitel = page.title | default: site.title -%}
+{%- if sidtitel contains site.title -%}
+  {%- assign seo_titel = sidtitel -%}
+{%- else -%}
+  {%- assign seo_titel = sidtitel | append: " – " | append: site.title -%}
+{%- endif -%}
+{%- assign seo_titel = seo_titel | markdownify | strip_html | strip_newlines | escape_once -%}
+{%- assign sidtitel = sidtitel | markdownify | strip_html | strip_newlines | escape_once -%}
+{%- assign beskrivning = page.description | default: page.excerpt | default: site.description -%}
+{%- assign beskrivning = beskrivning | markdownify | strip_html | strip_newlines | escape_once | strip -%}
+{%- assign canonical = page.url | replace: "/index.html", "/" | absolute_url -%}
+{%- assign delbild = page.header.og_image | default: page.header.overlay_image | default: page.header.image | default: page.image_path | default: site.og_image -%}
+{%- if page.date -%}{%- assign og_typ = "article" -%}{%- else -%}{%- assign og_typ = "website" -%}{%- endif -%}
+<title>{{ seo_titel }}</title>
+<meta name="description" content="{{ beskrivning }}">
+<link rel="canonical" href="{{ canonical }}">
+<meta property="og:type" content="{{ og_typ }}">
+<meta property="og:locale" content="{{ site.locale | replace: '-', '_' }}">
+<meta property="og:site_name" content="{{ site.title | escape_once }}">
+<meta property="og:title" content="{{ sidtitel }}">
+<meta property="og:url" content="{{ canonical }}">
+<meta property="og:description" content="{{ beskrivning }}">
+<meta property="og:image" content="{{ delbild | absolute_url }}">
+{%- if page.date %}
+<meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+{%- endif %}
+{%- if site.google_site_verification %}
+<meta name="google-site-verification" content="{{ site.google_site_verification }}">
+{%- endif %}
+{%- if page.url == '/' %}
+{% include schema.html %}
+{%- endif %}
