@@ -1,7 +1,7 @@
 # Handover: cellotrion.se
 
-Läget 24 november 2026. Kompletterar `README.md` (installation och lokal
-körning) och `CLAUDE.md` (bilder, sidhuvudsbilder, layouter) – här står
+Läget 24 november 2026, uppdaterad samma kväll. Kompletterar `README.md`
+(installation och lokal körning) och `CLAUDE.md` (bilder, sidhuvudsbilder, layouter) – här står
 sammanhanget: var sajten står, varför den ser ut som den gör, och vad som
 väntar.
 
@@ -11,14 +11,14 @@ väntar.
 |---|---|
 | Adress | cellotrion.se |
 | Repo | `teyrow/cellotrion.se`, publiceras från `main` |
-| Senaste ändring | 5 september 2026 (`a68480f`) |
+| Senaste ändring | 24 november 2026 |
 | Publicering | push till `main` → `pages-build-deployment`, klart på en minut |
 | Domän | `CNAME` i reporoten pekar ut cellotrion.se. **Raderas den slutar domänen fungera.** |
 
-**Det mest akuta: sajten har inte visat någon kommande konsert sedan den 23
-augusti.** Startsidan har bara rubriken Tidigare evenemang, med fem konserter
-från mars till augusti. En besökare som hittar hit ser en grupp som inte
-verkar spela längre. Lägg in nästa datum så fort det finns.
+**Nästa konsert: julotta i Askeby 25 december kl. 9.** Den ligger uppe sedan
+24 november och är sajtens enda kommande evenemang. Dessförinnan hade
+startsidan stått utan kommande konsert sedan augusti, vilket får en besökare
+att tro att gruppen slutat spela. Lägg in nästa datum så fort det finns.
 
 ## Hur den är byggd
 
@@ -48,7 +48,12 @@ Det här är det enda som görs regelbundet. En fil räcker.
    - `permalink` – sätt alltid en egen, t.ex. `/musikcafe-i-vreta/`
    - `ev_date` och `ev_end_date` – med tidszon, `+01:00` vinter, `+02:00` sommar
    - `ev_location` med `title`, `street`, `locality`
-   - `ev_offers` – namn och pris, `0` för fri entré
+   - `ev_offers` – namn och pris, `0` för fri entré. Utelämnas när priset
+     inte är känt eller när någon annan arrangerar
+   - `ev_organizer` – bara när någon annan bjuder in, t.ex. en församling.
+     Utan fältet står Cellotrion som arrangör
+   - `ev_type` – bara när evenemanget inte är en konsert. Julottan är ett
+     `Event`, en konsert är standardvärdet `MusicEvent`
    - `image_path` (affischen) och `header.overlay_image` (sidhuvudet)
    - `excerpt` och `description` – syns i sökresultat och vid delning
 2. Lägg affischen i `assets/images/` och kör `bundle exec ruby tools/responsive_images.rb`
@@ -95,39 +100,50 @@ och pris. Det är det som kan ge evenemangsresultat i Google.
 
 **Innehåll**
 
-1. **Nästa konsert.** Se ovan – det viktigaste.
+1. **Nästa konsert efter julottan.** Julottan 25 december är inlagd. Därefter
+   står startsidan tom igen om inget nytt datum kommer.
 2. **Konsertfoton saknas helt.** Det finns inga bilder på gruppen som spelar
-   inför publik, varken för sajten eller för Google-profilen. Be någon
-   fotografera nästa gång.
+   inför publik, varken för sajten eller för Google-profilen. Julottan är ett
+   bra tillfälle: levande ljus, cello och publik.
+3. **Länkar utifrån.** Elimförsamlingen arrangerar julottan och sprider den i
+   sina kanaler. En länk därifrån till `/julotta-askeby/` gör mer för
+   synligheten än något som går att ändra i koden.
 
 **Google**
 
-3. **Search Console är inte verifierad.** Koden som togs fram i augusti kom
-   från DNS-metoden och fungerar inte som metatagg. Hämta koden under fliken
-   HTML-tagg och lägg den som `google_site_verification` i `_config.yml`, eller
-   kör DNS-vägen och strunta i taggen. Därefter: skicka in
-   `https://cellotrion.se/sitemap.xml`.
-4. **Google Företagsprofil** – status okänd. Färdig verksamhetsbeskrivning på
+4. **Search Console är verifierad** sedan 24 november, via en TXT-post i DNS.
+   Det ger en domänegenskap som täcker http, https, www och alla underdomäner.
+   **Ta aldrig bort TXT-posten** – Google kontrollerar den med jämna mellanrum
+   och verifieringen faller när den försvinner. Sitemapen är inskickad och
+   lästes senast 18 november, då med nio sidor. Julottan kom till den 24:e, så
+   siffran blir tio vid nästa läsning. Ingen åtgärd behövs.
+5. **Indexering av julottan.** Kör URL-inspektion på
+   `https://cellotrion.se/julotta-askeby/` och begär indexering. Konserten är
+   tidskritisk på ett sätt sidorna annars inte är.
+6. **Google Företagsprofil** – status okänd. Färdig verksamhetsbeskrivning på
    695 tecken och beskurna bilder för logotyp och omslag togs fram i augusti och
    ligger i chatthistoriken, inte i repot.
-5. **Facebook-adressen `facebook.com/Cellotrion/`** har aldrig verifierats i en
+7. **Facebook-adressen `facebook.com/Cellotrion/`** har aldrig verifierats i en
    webbläsare. Den används i sidfoten och i `sameAs` i strukturerad data, där en
    trasig länk är sämre än ingen.
 
 **Underhåll**
 
-6. **11,2 MB av 13,8 MB i `assets/images/` används inte** – gamla pressbilder,
-   en PNG på 4,2 MB och `unsplash-*` från temamallen. De laddas aldrig av
-   besökare men ligger i varje klon.
-7. **Fem grenar kan städas.** `claude/bevaka-temaversion` (bevakar ett tema som
-   inte finns kvar) och `claude/plan-utan-jekyll` (beslutsunderlag, kan sparas
-   om ni vill ha historiken) är omergade. `gh-pages` och `koranyi-del2` är
-   gamla och publicerar ingenting – `gh-pages` innehåller källkod från maj och
-   är bara vilseledande.
-8. **Lighthouse mot den publicerade sajten.** Kör `pagespeed.web.dev` mot
+8. **Grenar att städa.** Allt arbete är mergat till `main`, men sju grenar
+   ligger kvar: `claude/bevaka-temaversion` (bevakar ett tema som inte finns),
+   `claude/plan-utan-jekyll` (beslutsunderlag, kan sparas för historiken),
+   `claude/julotta`, `claude/julotta-sluttid`, `claude/stadning`, samt de gamla
+   `gh-pages` och `koranyi-del2`. `gh-pages` publicerar ingenting – den
+   innehåller källkod från maj och är bara vilseledande.
+9. **Lighthouse mot den publicerade sajten.** Kör `pagespeed.web.dev` mot
    cellotrion.se. SEO-poängen bör ligga på 92 av en känd orsak: tre
    "Läs mer"-knappar har `aria-label` med konsertens namn, men Lighthouse
    tittar på den synliga texten. Att nå 100 kräver längre knapptexter.
+
+**Avklarat sedan handoveren skrevs**
+
+Oanvända bilder borttagna, 11,2 MB. Två kommentarer i `_config.yml` som
+beskrev det gamla temat rättade. Search Console verifierad.
 
 ## Om arbetet sker via Claude Code
 
