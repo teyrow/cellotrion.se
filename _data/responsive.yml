@@ -95,6 +95,38 @@ assets/images/jk-affisch.jpg:
   - w: 1200
     webp: "/assets/images/resp/jk-affisch-1200.webp"
     jpg: "/assets/images/resp/jk-affisch-1200.jpg"
+assets/images/julotta-askeby-hero.jpg:
+  width: 1414
+  height: 710
+  variants:
+  - w: 400
+    webp: "/assets/images/resp/julotta-askeby-hero-400.webp"
+    jpg: "/assets/images/resp/julotta-askeby-hero-400.jpg"
+  - w: 800
+    webp: "/assets/images/resp/julotta-askeby-hero-800.webp"
+    jpg: "/assets/images/resp/julotta-askeby-hero-800.jpg"
+  - w: 1200
+    webp: "/assets/images/resp/julotta-askeby-hero-1200.webp"
+    jpg: "/assets/images/resp/julotta-askeby-hero-1200.jpg"
+  - w: 1414
+    webp: "/assets/images/resp/julotta-askeby-hero-1414.webp"
+    jpg: "/assets/images/resp/julotta-askeby-hero-1414.jpg"
+assets/images/julotta-askeby.jpg:
+  width: 1414
+  height: 2000
+  variants:
+  - w: 400
+    webp: "/assets/images/resp/julotta-askeby-400.webp"
+    jpg: "/assets/images/resp/julotta-askeby-400.jpg"
+  - w: 800
+    webp: "/assets/images/resp/julotta-askeby-800.webp"
+    jpg: "/assets/images/resp/julotta-askeby-800.jpg"
+  - w: 1200
+    webp: "/assets/images/resp/julotta-askeby-1200.webp"
+    jpg: "/assets/images/resp/julotta-askeby-1200.jpg"
+  - w: 1414
+    webp: "/assets/images/resp/julotta-askeby-1414.webp"
+    jpg: "/assets/images/resp/julotta-askeby-1414.jpg"
 assets/images/musikcafe-23-aug.jpg:
   width: 1586
   height: 2244

@@ -6,10 +6,24 @@
 {%- if page.ev_date -%}
 {%- assign ev_image = page.header.og_image | default: page.image_path | default: page.header.overlay_image | default: site.og_image -%}
 {%- assign ev_description = page.description | default: page.excerpt | strip_html | strip_newlines | strip -%}
+{%- comment -%}
+  Typ och arrangör går att styra per konsert. Standard är MusicEvent med
+  Cellotrion som arrangör, alltså det som gäller när vi bjuder in själva.
+  Spelar vi hos någon annan – en församling, ett galleri – sätts ev_organizer
+  i front matter, och ev_type när evenemanget inte är en konsert.
+{%- endcomment -%}
+{%- assign ev_typ = page.ev_type | default: "MusicEvent" -%}
+{%- if page.ev_organizer -%}
+  {%- assign ev_organizer_namn = page.ev_organizer.name -%}
+  {%- assign ev_organizer_url = page.ev_organizer.url | default: '' -%}
+{%- else -%}
+  {%- assign ev_organizer_namn = site.social.name | default: site.title -%}
+  {%- assign ev_organizer_url = '/' | absolute_url -%}
+{%- endif -%}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "MusicEvent",
+  "@type": {{ ev_typ | jsonify }},
   "name": {{ page.title | jsonify }},
   "url": {{ page.url | absolute_url | jsonify }},
   "startDate": {{ page.ev_date | date: "%Y-%m-%dT%H:%M:%S%:z" | jsonify }},
@@ -27,8 +41,8 @@
   },
   "organizer": {
     "@type": "Organization",
-    "name": {{ site.social.name | default: site.title | jsonify }},
-    "url": {{ '/' | absolute_url | jsonify }}
+    "name": {{ ev_organizer_namn | jsonify }}{% if ev_organizer_url != '' %},
+    "url": {{ ev_organizer_url | jsonify }}{% endif %}
   },
   {%- if page.ev_offers %}
   "offers": [
