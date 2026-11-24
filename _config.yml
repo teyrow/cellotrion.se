@@ -54,6 +54,7 @@ exclude:
   - vendor/
   - README.md
   - CLAUDE.md
+  - docs/
   - tools/
 
 # Plugins (previously gems:)
