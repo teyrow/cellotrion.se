@@ -4,7 +4,7 @@ permalink: /julotta-askeby/
 layout: event
 date: 2026-11-24T19:00:00+01:00
 ev_date: 2026-12-25T09:00:00+01:00
-ev_end_date: 2026-12-25T10:00:00+01:00 # bara för strukturerad data, visas inte på sidan
+ev_end_date: 2026-12-25T10:30:00+01:00 # bara för strukturerad data, visas inte på sidan
 ev_type: Event # gudstjänst med cellomusik, inte en konsert
 ev_organizer:
   name: "Elimförsamlingen Askeby/Örtomta"
