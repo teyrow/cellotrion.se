@@ -21,13 +21,12 @@ url: "https://cellotrion.se" # bas-URL för canonical, sitemap, og:url och RSS
 baseurl: "" # sajten ligger i roten av domänen
 repository: "teyrow/cellotrion.se"
 og_image: /assets/images/cellotrion.jpeg # bild som visas när sidan delas
-social:
-  type: Organization # måste vara exakt "Organization" för att temat ska generera rätt schema.org-data
+social: # namn och länkar används av _includes/schema.html
   name: Cellotrion
   links:
     - "https://www.facebook.com/Cellotrion/"
     - "https://www.instagram.com/cellotrion/"
-search: true # kostar cirka 32 kB JavaScript för Lunr och sökindexet
+search: true # ritar sökrutan; logiken är assets/js/sok.js, cirka 2 kB
 
 # Build settings
 markdown: kramdown
