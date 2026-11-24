@@ -58,6 +58,27 @@ Sajten använder **inget tema**. Allt ligger i repot:
 - `_includes/seo.html` sätter titel, beskrivning, canonical och delningsdata.
   `schema.html` är gruppens data på startsidan, `event_schema.html` konsertens.
 
+## Evenemang
+
+Två fält i ett inläggs front matter är valfria och har standardvärden som
+passar när ni arrangerar själva. De behövs bara när något avviker:
+
+- **`ev_organizer`** – arrangören, med `name` och valfri `url`. Utan fältet
+  står Cellotrion som arrangör i den strukturerade datan. Sätt det när någon
+  annan bjuder in, t.ex. en församling eller ett galleri. Cellotrion står kvar
+  som `performer` oavsett.
+- **`ev_type`** – schema.org-typ. Standard är `MusicEvent`, alltså en konsert.
+  Sätt `Event` när musiken är en del av något annat, som julottan där den
+  ingår i en gudstjänst.
+
+Båda läses av `_includes/event_schema.html`. Lägger man till fler fält där är
+det värt att behålla mönstret: standardvärdet ska vara det vanliga fallet, så
+att befintliga inlägg inte behöver röras.
+
+Tidszonen i `ev_date` och `ev_end_date` skrivs ut: `+01:00` vintertid,
+`+02:00` sommartid. Kopierar man en sommarkonsert till december blir tiden
+en timme fel, utan att något varnar.
+
 ## Publicering
 
 Push till `main` startar `pages-build-deployment` hos GitHub Pages, klart på
